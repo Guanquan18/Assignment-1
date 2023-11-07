@@ -5,26 +5,82 @@
     <title>title</title>
     <style>
         
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        a{
+            cursor: pointer;
+        }
+
         .header-main{
             width: 100%;
-            height: 40px;
+            height: 60px;
             background-color: bisque;
+            display: flex;
+            justify-content: space-between;
         }
+        .header-main-logo{
+            width: fit-content;
+            height: 100% ;
+            background-color: yellow;
+            display:flex;
+        }
+        .header-main img{
+            height: 30px;
+        }
+        .header-main-nav{
+            width:fit-content;
+            height: 100% ;
+            background-color: orange;
+        }
+        .header-main-nav ul{
+            
+            
+            list-style: none;
+            
+        }
+        
+        header-main-nav ul li{
+            display: inline;
+        }
+        .header-main-nav ul li a{
+            padding:0 10px;
+            
+            
+        }
+        .header-main-sm{
+            width: 120px;
+            height: 100% ;
+            background-color: red;
+        }
+        .header-main-sm-fb{
+            width: 20px;
+            height: 20px;
+            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkNUMK1YBDuigRBQoYYt5JGI8vdQ3XKFpiOIOyRMUi&s);
+            background-repeat: no-repeat;
+            background-size: cover;
+        } 
         
     </style>
 </head>
 <body >
     <header class="header-main">
-        <div></div>
-        <nav>
-            <ul>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-                <li>Home</li>
-            </ul>
-        </nav>
-        <div></div>
+        <div class="header-main-logo">
+            <img scr="https://images-platform.99static.com//w75oA_U4veNm_rXBh2MXazF2BUs=/418x437:1572x1591/fit-in/500x500/99designs-contests-attachments/123/123162/attachment_123162739" alt="Bike Logo">
+            <nav class="header-main-nav">
+                <ul style="list-style: none;">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+            
+        <div class="header-main-sm">
+            <div class="header-main-sm-fb"></div>
+            <div class="header-main-sm-in"></div>
+        </div>
     </header>
     
 </body>
