@@ -3,66 +3,103 @@
 <head>
     <meta charset="UTF-8" />
     <title>title</title>
+    <link rel="stylesheet" href="Style.css" type="text/css">
     <style>
-        
-        
-        a{
-            cursor: pointer;
+        a,li{
+            font-family: Arial, Helvetica, sans-serif;
         }
-
-        .header-main{
+        .background-image{
             width: 100%;
-            height: 60px;
-            background-color: bisque;
-            display: flex;
-            justify-content: space-between;
-        }
-        .header-main-logo{
-            width: fit-content;
-            height: 100% ;
-            background-color: yellow;
-            display:flex;
-        }
-        .header-main-nav{
-            width: 100px;
-            height: 100% ;
-            background-color: orange;
-        }
-        
-       
-        .header-main-sm{
-            width: 120px;
-            height: 100% ;
-            background-color: red;
-        }
-        .header-main-sm-fb{
-            width: 100%;
-            height: 100%;
-            background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkNUMK1YBDuigRBQoYYt5JGI8vdQ3XKFpiOIOyRMUi&s);
-            background-repeat: no-repeat;
+            height: 500px;
+            background-image: url(https://cdn.outsideonline.com/wp-content/uploads/2023/02/pinkbike-bike-type-lead_h.jpeg);
             background-size: cover;
-        } 
+        }
+       
+
         
     </style>
 </head>
 <body >
-    <header class="header-main">
-        <div class="header-main-logo">
-            <img src="https://images-platform.99static.com//w75oA_U4veNm_rXBh2MXazF2BUs=/418x437:1572x1591/fit-in/500x500/99designs-contests-attachments/123/123162/attachment_123162739" 
-            alt="Bike Logo" style="width: fit-content;">
-            <nav class="header-main-nav">
-                <ul>
+    <header>
+        <section class="main-header-section">
+
+            <div class="main-header-section-logo">
+                <img src="https://images-platform.99static.com//w75oA_U4veNm_rXBh2MXazF2BUs=/418x437:1572x1591/fit-in/500x500/99designs-contests-attachments/123/123162/attachment_123162739" 
+                alt="Bike Logo" style="width: fit-content;">
+            </div>
+            <div class="main-header-section-search">
+                <p style="padding-left:10px;">search</p>
+            </div>
+
+            <div class="main-header-section-profile">
+                <img src="../Photos/IMG_20220201_143502.png" class="main-header-section-pic" alt="Profile" >
+                <img src="../Photos/Cart.png" class="main-header-section-cart">
+            </div>
+
+        </section>
+        <hr>
+        <section>
+            <nav class="main-header-section-nav">
+                <ul id="ul-nostyle">
                     <li><a href="index.html">Home</a></li>
-                    
+                    <li><a href="index.html">Products</a></li>
+                    <li><a href="index.html">Contact Us</a></li>
+                    <li><a href="index.html">About Us</a></li>
                 </ul>
             </nav>
-        </div>
-            
-        <div class="header-main-sm">
-            <div class="header-main-sm-fb"></div>
-            <div class="header-main-sm-in"></div>
-        </div>
+        </section>
     </header>
+    <section class="background-image">
+        
+    </section>
+    
+    
     
 </body>
+<footer style="background-color:rgb(53, 53, 53);">
+
+    <!--Social Media-->
+    <h1 style="text-align: center;color: white;">Follow Us on</h1>
+    <div class="main-footer-sm">
+        <a href="https://www.facebook.com/">
+            <img src="../Photos/FaceBook.png">
+        </a>
+        <a href="https://www.instagram.com/">
+            <img src="../Photos/Instagram.png">
+        </a>
+        <a href="https://twitter.com/">
+            <img src="../Photos/Twitter.png">
+        </a>
+    </div>
+
+    <!--Site Map-->
+    <div class="main-footer-sitemap">
+        <ul id="ul-nostyle">
+            <li class="main-footer-sitemap-catagory">Bikes</li>
+            <li><a href="#">Mountain</a></li>
+            <li><a href="#">Road</a></li>
+        </ul>
+        <ul id="ul-nostyle">
+            <li class="main-footer-sitemap-catagory">Accessories</li>
+            <li><a href="#">Mountain</a></li>
+            <li><a href="#">Road</a></li>
+        </ul>
+        <ul id="ul-nostyle">
+            <li class="main-footer-sitemap-catagory">About Us</li>
+            <li><a href="#">Mountain</a></li>
+        </ul>
+        <ul id="ul-nostyle">
+            <li class="main-footer-sitemap-catagory">Support</li>
+            <li><a href="#">Contact information</a></li>
+            <li><a href="#">Contact Form</a></li>
+        </ul>
+        <div>
+            <p class="main-footer-app">Download App</p>
+            <img src="#" alt="QR Quote">
+            
+
+        </div>
+    </div>
+    
+</footer>
 </html>
