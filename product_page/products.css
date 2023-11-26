@@ -1,10 +1,14 @@
+/*050505
+1B9AAA
+DDDBCB
+F1F1F1
+FFFFFF*/
 /* Main Page Content 1 */
-.products-body-content{
+.products-body-content1{
     width: 100%;
     min-height: 650px;
-    margin-bottom: 15px;
+    margin-bottom: 45px;
 
-    
     background-position: center ;
     background-size: cover;
     position: relative;
@@ -14,13 +18,13 @@
     justify-content: center;
     align-items: center; 
 }
-.products-body-content h1{
+.products-body-content1 h1{
     color: white;
     font-size: 60px;
     text-align: center;
     margin: 0 0 20px;
 }
-.products-body-content p{
+.products-body-content1 p{
 
     max-width: 70%;
     color: white;
@@ -43,8 +47,50 @@
     
 }
 
+.products-body-content2{
+    width: 95%;
+    margin: 0 auto;
+    min-height: 30px;
+    margin-bottom: 45px;
+    display: flex;
+    justify-content: space-between;
+}
+.products-body-content2-text{
+    padding-right:20px ;
+    padding-left: 0;
+    margin: auto 0 auto;
+
+    display: block;
+    align-items: center;
+    
+}
+.products-body-content2-text h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: left;
+    margin: 0 0 20px;
+}
+.products-body-content2 p{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+    padding: 0;
+    margin: 20px 0 0;
+}
+.products-body-content2-image{
+    max-width: 60%;
+    box-shadow: 0 5px 6px rgba(0,0,0,0.3);
+    border-radius: 12px;
+    
+    
+}
+
+
+
+
 /* Road Bike Products */
-.roadbike-products-wrapper{
+.products-wrapper{
     width: 90%;
     margin: 0 auto;
 }
@@ -52,57 +98,66 @@
     width: 100%;
     height: fit-content;
     display: flex;
+    flex:1 40%;
     justify-content: space-between;
     align-self: start;
     flex-wrap: wrap;
 }
 .products-body-item{
     width: 30%;
+    min-width: 250px;
+    margin: 20px auto;
     border-radius: 12px ;
-    margin: 20px 0;
+    border: 0.5px solid #c1c1c1;
 
     background-color: #ffffff;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.3),
-    0 5px 5px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
     
     display: flex;
     flex-direction: column;
     
+    box-sizing: border-box;
 }
 
 .products-body-item img{
     max-width: 100%;
-    max-height:150px ;
+    height:150px ;
     border-radius: 12px 12px 0 0;
     margin: 0 auto;
+    
 }
+
 .products-body-item-color{
     width: 100%;
     height: 50px;
-    padding: 0 20px;
     margin: 0px;
+    padding: 0 20px;
+    
     list-style: none;
-
+    
     display: flex;
-    justify-content: start;
+    justify-content: s;
     align-items: center;
 }
 
-.products-body-item h2,.products-body-item-color,p{
-    padding: 0 20px;
-}
-
-.products-body-item-color-item {
-    width: 40px;
-    height: 40px;
-    margin-right:20px ;
+.products-body-item-color li {
+    width: 30px;
+    height: 30px;
+    margin-right:20px;
+    border: 1px solid #000000;
     border-radius: 24px;
 }
+.products-body-item h2{
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+}
+
 .products-body-item p{
-    
+    padding: 0 20px;
     font-size: 20px;
     font-weight: bold;
     margin: 10px 0;
+    color: rgb(0, 0, 0);
 }
 
 /* Road Bike Products Stops Here */

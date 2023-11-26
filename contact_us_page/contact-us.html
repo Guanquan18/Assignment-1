@@ -5,6 +5,7 @@
     <title>title</title>
     <link rel="stylesheet" href="../main.css" type="text/css">
     <link rel="stylesheet" href="contact_us.css" type="text/css">
+    <script src="https://kit.fontawesome.com/cc3cb1dbea.js" crossorigin="anonymous"></script>
     <style>
         a,li{
             font-family:Arial, Helvetica, sans-serif;
@@ -19,58 +20,83 @@
 
     <!-- Header -->
     <header>
-        <section class="main-header-section">
+        <section class="main-header">
 
-            <div class="main-header-section-logo">
+            <div class="main-header-logo">
                 <img src="https://images-platform.99static.com//w75oA_U4veNm_rXBh2MXazF2BUs=/418x437:1572x1591/fit-in/500x500/99designs-contests-attachments/123/123162/attachment_123162739" 
                 alt="Bike Logo" style="width: fit-content;">
             </div>
-            <div class="main-header-section-search">
-                <p style="padding-left:10px;">search</p>
+            
+            <div class="main-header-search">
+                <input type="search" placeholder="Search">
             </div>
-
-            <div class="main-header-section-profile">
-                <img src="../Photos/IMG_20220201_143502.png" class="main-header-section-pic" alt="Profile" >
-                <img src="../Photos/Cart.png" class="main-header-section-cart">
+            
+            <div class="main-header-profile">
+                <img src="../Photos/IMG_20220201_143502.png" class="main-header-pic" alt="Profile" >
+                <i class="fa-solid fa-cart-shopping"></i>
             </div>
-
         </section>
-        <hr>
-        <section>
-            <nav class="main-header-section-nav">
-                <ul id="ul-nostyle">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="Products.html">Products</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">About Us</a></li>
-                </ul>
-            </nav>
-        </section>
+        
+        <nav class="main-header-nav">
+            <ul id="ul-nostyle">
+                <li><a href="/index_page/index.html">Home</a></li>
+                <li><a href="/product_page/products-road-bike.html">Products</a></li>
+                <li><a href="/contact_us_page/contact-us.html">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+            </ul>
+        </nav>
+        
     </header>
-
+    <!-- Header Ends Here-->
 
     <!-- Main Content -->
     <!-- Content 1 -->
-    <section class="products-body-content"
-    style="background-image:linear-gradient(rgba(0, 0, 0, 0.4),rgba(0, 0, 0, 0.4)), url(https://hips.hearstapps.com/hmg-prod/images/s-works-venge-disc-ii-109-1529527267.jpg?crop=0.886xw:0.870xh;0.0451xw,0.0961xh&resize=980:*);">
-        <h1>Road Bikes</h1>
-        <p>Build by top engineers in the world<br>
-            with the best materials available<br>
-            to ensure the best quality and performance<br>
-            for our customers.
+    <section class="contactus-body-content1">
+        <h1>Contact Us</h1>
+        <p>Whether you have a question about our products, need assistance with an order, or simply want to share your biking experiences with us, we're here to help.
         </p>    
     </section>
-    <section class="products-body-content"
-    style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(https://media.trekbikes.com/image/upload/w_1200/Trek-Madone-Norway-RB-High-Res-190);">
-        <h1>Road Bikes</h1>
-        <p>Build by top engineers in the world<br>
-            with the best materials available<br>
-            to ensure the best quality and performance<br>
-            for our customers.
-        </p>    
-    </section>
-    
+    <!-- Content 1 Ends Here-->
+
     <!-- Content 2 -->
+    <article class="contactus-body-content2">
+        <section class="contactus-body-content2-container">
+            <div class="contactus-contact-details">
+
+                <h2>Contact Details</h2>
+                <div class="contactus-contact-details-opening-hours">
+                    <i class="fa-solid fa-clock"></i><span></span>Mon to Fri, 11am to 6pm<br>Sat to Sun, 9am to 6pm</span>
+                </div>
+                <div class="contactus-contact-details-location">
+                    <i class="fa-solid fa-location-dot"></i><span></span>123, ABC Street, XYZ City, Country</span>
+                </div>
+                <div class="contactus-contact-details-phone">
+                    <i class="fa-solid fa-phone"></i><span></span>+123456789</span>
+                </div>
+                <div class="contactus-contact-details-email">
+                    <i class="fa-solid fa-envelope"></i><span>Speed@gmail.com</span>
+                </div>
+            </div>
+            <div class="contactus-forms">
+                <h2>Keep in touch with us</h2>
+                <form action="#" >
+                    
+                    <input type="text" id="fname" placeholder="Enter first name" required>
+                    
+                    <input type="text" id="lname" placeholder="Enter last name" required>
+                    
+                    <input type="email" id="email" placeholder="Enter email" required>
+               
+                    <input type="text" id="contact-number" placeholder="Enter contact number" required>
+               
+                    <textarea id="message" placeholder="Enter message" style="height:50px"></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+            </div>
+        </section>
+        
+
+    </article>
 
     
     

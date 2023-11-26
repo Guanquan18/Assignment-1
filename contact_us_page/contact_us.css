@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+}
+.contactus-body-content1{
+    width: 100%;
+    height: 550px;
+    margin-bottom: 45px;;
+
+    background-image:linear-gradient(0.25turn,rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)), 
+    url(https://cdn.triathlete.com/wp-content/uploads/2022/07/CLASH-inline-image-2-scaled.jpg?width=730);
+    background-position: center ;
+    background-size: cover;
+    position: relative;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; 
+}
+.contactus-body-content1 h1{
+    color: white;
+    font-size: 60px;
+    text-align: start;
+    margin: 0 0 20px;
+    margin-left: 10%;
+}
+.contactus-body-content1 p{
+
+    max-width: 45%;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: start;
+    margin: 20px 0 10px;
+    margin-left: 10%;
+}
+.contactus-body-content2{
+    width: 100%;
+    height: 550px;
+    margin-bottom:45px ;
+    background-size: cover;
+    background-image:linear-gradient(0.25turn,rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.6)), 
+    url(https://cdn.triathlete.com/wp-content/uploads/2021/10/V-PR-Matt-Hanson-Road-Testing-scaled.jpg?width=1200);
+    background-position: top;
+
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.contactus-body-content2-container{
+    width: 70%;
+    margin-right:30px ;
+    height: fit-content;
+    align-items: center;
+    position: relative;
+    
+    background-color: #F1F1F1;
+    border-radius: 12px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+    flex:0 60%;
+}
+
+.contactus-body-content2-container div{
+    align-self: center;
+}
+
+.contactus-contact-details{
+    width: 90%;
+    height: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    flex: 1;
+
+    background-color: rgb(53, 53, 53);
+    border-radius: 12px;
+    color: white;
+
+    position: relative;
+    left: -25px;
+}
+
+.contactus-contact-details h2{
+    margin: 0 20px 20px;
+}
+
+.contactus-contact-details div{
+    margin: 10px 20px;
+    display: inline-flex;
+}
+
+.contactus-contact-details div i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contactus-forms{
+    width: auto;
+    margin: 20px 0;
+    margin-right: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 2 ;
+}
+
+.contactus-forms input{
+    width:49%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 5px;
+
+    font-size: 10px;
+}
+
+.contactus-forms textarea{
+    width:100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 5px;
+
+    font-size: 10px;
+}
