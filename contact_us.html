@@ -3,12 +3,28 @@
 <head>
     <meta charset="UTF-8" />
     <title>title</title>
-    <link rel="stylesheet" href="../main.css" type="text/css">
-    <link rel="stylesheet" href="contact_us.css" type="text/css">
+    <link rel="stylesheet" href="/main.css" type="text/css">
+    <link rel="stylesheet" href="/index.css" type="text/css">
     <script src="https://kit.fontawesome.com/cc3cb1dbea.js" crossorigin="anonymous"></script>
     <style>
         a,li{
             font-family:Arial, Helvetica, sans-serif;
+        }
+        #content-1{
+            margin:55px 0 45px;
+
+            background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)), 
+            url(https://global.discourse-cdn.com/trainerroad/original/3X/2/a/2a95a529a66b559baff940d4a168b44d455a7be6.jpeg);
+            background-position: bottom ;
+            background-size: cover;
+            position: relative;
+        }
+        #content-2{
+            margin-bottom:45px ;
+            background-size: cover;
+            background-image:linear-gradient(0.25turn,rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.6)), 
+            url(https://cdn.triathlete.com/wp-content/uploads/2021/10/V-PR-Matt-Hanson-Road-Testing-scaled.jpg?width=1200);
+            background-position: top;
         }
 
 
@@ -19,39 +35,38 @@
 <body >
 
     <!-- Header -->
-    <header>
-        <section class="main-header">
 
-            <div class="main-header-logo">
-                <img src="https://images-platform.99static.com//w75oA_U4veNm_rXBh2MXazF2BUs=/418x437:1572x1591/fit-in/500x500/99designs-contests-attachments/123/123162/attachment_123162739" 
-                alt="Bike Logo" style="width: fit-content;">
-            </div>
-            
-            <div class="main-header-search">
-                <input type="search" placeholder="Search">
-            </div>
-            
-            <div class="main-header-profile">
-                <img src="../Photos/IMG_20220201_143502.png" class="main-header-pic" alt="Profile" >
-                <i class="fa-solid fa-cart-shopping"></i>
-            </div>
-        </section>
+    <header class="main-header">
+
+        <div class="main-header-logo">
+            <i class="fa-solid fa-person-biking"></i>
+            <h1>SPEED</h1>
+        </div>
         
+        <div class="main-header-search">
+            <input type="search" placeholder="Search">
+        </div>
+
         <nav class="main-header-nav">
             <ul id="ul-nostyle">
-                <li><a href="/index_page/index.html">Home</a></li>
-                <li><a href="/product_page/products-road-bike.html">Products</a></li>
-                <li><a href="/contact_us_page/contact-us.html">Contact Us</a></li>
-                <li><a href="#">About Us</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/products_road_bike.html">Products</a></li>
+                <li><a href="/contact_us.html">Contact Us</a></li>
+                <li><a href="/about_us.html">About Us</a></li>
             </ul>
         </nav>
         
+        <div class="main-header-profile">
+            <img src="../Photos/IMG_20220201_143502.png" class="main-header-pic" alt="Profile" >
+            
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+
     </header>
     <!-- Header Ends Here-->
 
-    <!-- Main Content -->
-    <!-- Content 1 -->
-    <section class="contactus-body-content1">
+    <!-- Content 1 starts Here -->
+    <section class="main-body-content-type1" id="content-1">
         <h1>Contact Us</h1>
         <p>Whether you have a question about our products, need assistance with an order, or simply want to share your biking experiences with us, we're here to help.
         </p>    
@@ -59,8 +74,8 @@
     <!-- Content 1 Ends Here-->
 
     <!-- Content 2 -->
-    <article class="contactus-body-content2">
-        <section class="contactus-body-content2-container">
+    <article class="contactus-body-content-type3" id="content-2">
+        <section class="contactus-body-content-type3-container">
             <div class="contactus-contact-details">
 
                 <h2>Contact Details</h2>

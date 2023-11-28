@@ -1,0 +1,264 @@
+/* Content type 1 */
+.main-body-content-type1 {
+    width: 100%;
+    height: calc(100vh - 55px);
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-body-content-type1 h1{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+.main-body-content-type1 p{
+    max-width: 70%;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+    margin: 20px 0 10px;
+}
+
+.main-body-content-type1-button{
+    background-color: white;
+    margin-top:40px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+/* Content type 2 */
+.main-body-content-type2{
+    width: 95%;
+    margin: 0 auto; /* Leave some space at the corner*/
+    
+    min-height: 30px;
+    margin-bottom: 75px;
+    gap: 20px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.main-body-content-type2-text{
+    margin: auto 0 auto;
+
+    display: block;
+    align-items: center;
+    
+}
+.main-body-content-type2-text h1{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: left;
+    margin: 0 0 20px;
+}
+.main-body-content-type2 p{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.main-body-content-type2-image{
+    max-width: 60%;
+    box-shadow: 0 0px 6px rgba(0,0,0,0.3);
+    border-radius: 24px;
+}
+/* Content type 2 Ends Here */
+
+/* Content type 3 */
+.contactus-body-content-type3{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.contactus-body-content-type3-container{
+    width: 70%;
+    margin-right:30px ;
+    height: fit-content;
+    align-items: center;
+    position: relative;
+    
+    background-color: #F1F1F1;
+    border-radius: 12px;
+
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: start;
+    flex:0 60%;
+}
+
+.contactus-body-content-type3-container div{
+    align-self: center;
+}
+
+.contactus-contact-details{
+    width: 90%;
+    height: 100%;
+    padding: 10px 0;
+    margin: 10px 0;
+    flex: 1;
+
+    background-color: rgb(53, 53, 53);
+    border-radius: 12px;
+    color: white;
+
+    position: relative;
+    left: -25px;
+}
+
+.contactus-contact-details h2{
+    margin: 0 20px 20px;
+}
+
+.contactus-contact-details div{
+    margin: 10px 20px;
+    display: inline-flex;
+}
+
+.contactus-contact-details div i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.contactus-forms{
+    width: auto;
+    margin: 20px 0;
+    margin-right: 20px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex: 2 ;
+}
+
+.contactus-forms input{
+    width:49%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 5px;
+
+    font-size: 10px;
+}
+
+.contactus-forms textarea{
+    width:100%;
+    height: 30px;
+    margin: 10px 0;
+    padding: 0 10px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 5px;
+
+    font-size: 10px;
+}
+/* Content type 3 Ends Here */
+
+
+/* Road Bike Products */
+.products-flex{
+    height: fit-content;
+    display: flex;
+    width: 95%;
+    margin: 0 auto;  /* Leave some space at conrer */
+    
+    flex:1 40%;
+    justify-content: space-between;
+    align-self: start;
+    flex-wrap: wrap;
+}
+.products-body-item{
+    width: 30%;
+    min-width: 250px;
+    margin: 20px 0;
+
+    border-radius: 12px ;;
+    background-color: #ffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    
+    display: flex;
+    flex-direction: column;
+}
+.products-body-item:hover{
+    box-shadow: 0 2px 4px rgba(0,0,0,0.6);
+    transform: translateY(-3px);
+    transition: all 0.3s ease-in-out
+}
+
+.products-body-item-image{
+    width: 100%;
+    height: fit-content;
+    
+    background-color: #f1f1f1;
+    border-radius:12px 12px 0 0  ;
+
+    display: inline-flex;
+    justify-content: center;
+    
+}
+
+.products-body-item img{
+    max-width: 100%;
+    height:fit-content ;
+
+    align-self: center;
+    border-radius: 12px 12px 0 0;
+    margin: 0 auto;
+    
+}
+
+.products-body-item-color{
+    width: 100%;
+    height: 50px;
+    margin: 0px;
+    padding: 0 20px;
+    
+    list-style: none;
+    
+    display: flex;
+    justify-content: s;
+    align-items: center;
+}
+
+.products-body-item-color li {
+    width: 30px;
+    height: 30px;
+    margin-right:20px;
+    border: 1px solid #000000;
+    border-radius: 24px;
+}
+.products-body-item h2{
+    padding: 0 20px;
+    color: rgb(0, 0, 0);
+}
+
+.products-body-item p{
+    padding: 0 20px;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: rgb(0, 0, 0);
+}
+/* Road Bike Products Stops Here */
