@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>title</title>
     <link rel="stylesheet" href="/main.css" type="text/css">
-    <link rel="stylesheet" href="/index.css" type="text/css">
+    <link rel="stylesheet" href="/normalised.css" type="text/css">
     <script src="https://kit.fontawesome.com/cc3cb1dbea.js" crossorigin="anonymous"></script>
     <style>
         a,li{
@@ -19,6 +19,13 @@
             position: relative;
         }
 
+        @media screen and (max-width: 768px) {
+            #content-2{
+                flex-wrap: wrap-reverse;
+            }
+            
+        }
+
         
 
     </style>
@@ -26,9 +33,20 @@
 <body >
 
     <!-- Header -->
-    <header class="main-header">
+    <nav class="main-header-menu">
+        <ul class="ul-nostyle">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/products_road_bike.html">Products</a></li>
+            <li><a href="/contact_us.html">Contact Us</a></li>
+            <li><a href="/about_us.html">About Us</a></li>
+        </ul>
+    </nav>
 
+    <header class="main-header">
         <div class="main-header-logo">
+            <div class="main-header-menu-button">
+
+            </div>
             <i class="fa-solid fa-person-biking"></i>
             <h1>SPEED</h1>
         </div>
@@ -38,31 +56,26 @@
         </div>
 
         <nav class="main-header-nav">
-            <ul id="ul-nostyle">
-                <li><a href="/index.html">Home</a></li>
+            <ul class="ul-nostyle">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="/products_road_bike.html">Products</a></li>
                 <li><a href="/contact_us.html">Contact Us</a></li>
                 <li><a href="/about_us.html">About Us</a></li>
             </ul>
         </nav>
         
-        <div class="main-header-profile">
-            <img src="../Photos/IMG_20220201_143502.png" class="main-header-pic" alt="Profile" >
-            
-            <i class="fa-solid fa-cart-shopping"></i>
-        </div>
-
     </header>
     <!-- Header Ends Here-->
 
     <!-- Content 1 starts Here -->
     <section class="main-body-content-type1" id="content-1">
-        <h1>Road Bikes</h1>
+        <h2>Road Bikes</h2>
         <p>Build by top engineers in the world<br>
             with the best materials available<br>
             to ensure the best quality and performance<br>
             for our customers.
-        </p>    
+        </p>
+        <a href="#item-section" class="main-body-content-type1-button">See Bikes</a>
     </section>
     <!-- Content 1 Ends Here-->
     
@@ -70,7 +83,7 @@
     <!-- style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(https://media.trekbikes.com/image/upload/w_1200/Trek-Madone-Norway-RB-High-Res-190);"-->
     <section class="main-body-content-type2" id="content-2">
         <div class="main-body-content-type2-text" >
-            <h1 >Road Bikes</h1>
+            <h2>Road Bikes</h2>
             <p >Build by top engineers in the world
                 with the best materials available
                 to ensure the best quality and performance
@@ -86,137 +99,142 @@
     
 
     <!-- Products -->
-    <section class="products-flex">
-        <a href="#" class="products-body-item" id="item-1">
-            <div class="products-body-item-image">
-                <img src="/Photos/full_2022_2921-1_speedmax-cfr-disc-di2_rd_P5.png" alt="Bike">
-            </div>
+    <article class="products-body-type5-container" id="item-section">
+        <h1>Our Road Bikes</h1>
+
+        <section>
+            <a href="/product_item1_page.html" class="products-body-type5-item" id="item-1">
+                <div class="products-body-type5-item-image">
+                    <img src="/Photos/product_item1/full_2022_2921-1_speedmax-cfr-disc-di2_rd_P5.png" alt="Bike">
+                </div>
+                
+                <h2>SPEED S-Works Venge</h2>
+                <ul class="products-body-type5-item-color ul-nostyle">
+                    <li  style="background-color: red;"></li>
+                    <li  style="background-color: blue;"></li>
+                    <li  style="background-color: green;"></li>
+                </ul>
+                <p>Price: 1000 SGD </p>
+            </a>
             
-            <h2>SPEED S-Works Venge</h2>
-            <ul class="products-body-item-color">
-                <li  style="background-color: red;"></li>
-                <li  style="background-color: blue;"></li>
-                <li  style="background-color: green;"></li>
-            </ul>
-            <p>Price: $1000 </p>
-        </a>
-        
-        <a href="#" class="products-body-item" id="item-2">
-            <div class="products-body-item-image">
-                <img src="/Photos/full_2023_3484_speedmax-cfr-tt_P01_P5.jpeg" alt="Bike">
-            </div>
-            
-            <h2>SPEED S-Works Venge</h2>
-            <ul class="products-body-item-color" >
-                <li  style="background-color: red;"></li>
-                <li  style="background-color: blue;"></li>
-                <li  style="background-color: green;"></li>
-            </ul>
-            <p>Price: $1000 </p>
-        </a>
-        <a href="#" class="products-body-item" id="item-3">
-            <div class="products-body-item-image">
-                <img src="/Photos/full_2023_3952_aeroad-cfr-disc-di2_P10_P5.jpeg" alt="Bike">
-            </div>
-            
-            <h2>SPEED S-Works Venge</h2>
-            <ul class="products-body-item-color" >
-                <li  style="background-color: red;"></li>
-                <li  style="background-color: blue;"></li>
-                <li  style="background-color: green;"></li>
-            </ul>
-            <p>Price: $1000 </p>
-        </a>
-        <a href="#" class="products-body-item" id="item-4">
-            <div class="products-body-item-image">
-                <img src="/Photos/bmc-23ed-speedmachine-00_ltd-cbn-wht-cbn-1.png">
-            </div>
-            
-            <h2>SPEED S-Works Venge</h2>
-            <ul class="products-body-item-color" >
-                <li  style="background-color: red;"></li>
-                <li  style="background-color: blue;"></li>
-                <li  style="background-color: green;"></li>
-            </ul>
-            <p>Price: $1000 </p>
-        </a>
-        <a href="#" class="products-body-item" id="item-5">
-            <div class="products-body-item-image">
-                <img src="/Photos/full_2022_speedmax-cf-8-disc-di2_3061_P04_P5.jpg" alt="Bike">
-            </div>
-            
-            <h2>SPEED S-Works Venge</h2>
-            <ul class="products-body-item-color" >
-                <li  style="background-color: red;"></li>
-                <li  style="background-color: blue;"></li>
-                <li  style="background-color: green;"></li>
-            </ul>
-            <p>Price: $1000 </p>
-        </a>
-        <a href="#" class="products-body-item" id="item-    6">
-            <div class="products-body-item-image">
-                <img src="/Photos/full_2023_3955_aeroad-cf-slx-8-disc-di2_P08_P5.jpeg" alt="Bike">
-            </div>
-            
-            <h2>SPEED S-Works Venge</h2>
-            <ul class="products-body-item-color" >
-                <li  style="background-color: red;"></li>
-                <li  style="background-color: blue;"></li>
-                <li  style="background-color: green;"></li>
-            </ul>
-            <p>Price: $1000 </p>
-        </a>
-    </section>
+            <a href="/product_item2_page.html" class="products-body-type5-item" id="item-2">
+                <div class="products-body-type5-item-image">
+                    <img src="/Photos/product_item2/full_2023_3484_speedmax-cfr-tt_P01_P5.jpeg" alt="Bike">
+                </div>
+                
+                <h2>SPEED S-Works Venge</h2>
+                <ul class="products-body-type5-item-color ul-nostyle" >
+                    <li  style="background-color: red;"></li>
+                    <li  style="background-color: blue;"></li>
+                    <li  style="background-color: green;"></li>
+                </ul>
+                <p>Price: 1000 SGD</p>
+            </a>
+            <a href="#" class="products-body-type5-item" id="item-3">
+                <div class="products-body-type5-item-image">
+                    <img src="/Photos/full_2023_3952_aeroad-cfr-disc-di2_P10_P5.jpeg" alt="Bike">
+                </div>
+                
+                <h2>SPEED S-Works Venge</h2>
+                <ul class="products-body-type5-item-color ul-nostyle" >
+                    <li  style="background-color: red;"></li>
+                    <li  style="background-color: blue;"></li>
+                    <li  style="background-color: green;"></li>
+                </ul>
+                <p>Price: 1000 SGD</p>
+            </a>
+            <a href="#" class="products-body-type5-item" id="item-4">
+                <div class="products-body-type5-item-image">
+                    <img src="/Photos/bmc-23ed-speedmachine-00_ltd-cbn-wht-cbn-1.png">
+                </div>
+                
+                <h2>SPEED S-Works Venge</h2>
+                <ul class="products-body-type5-item-color ul-nostyle" >
+                    <li  style="background-color: red;"></li>
+                    <li  style="background-color: blue;"></li>
+                    <li  style="background-color: green;"></li>
+                </ul>
+                <p>Price: 1000 SGD</p>
+            </a>
+            <a href="#" class="products-body-type5-item" id="item-5">
+                <div class="products-body-type5-item-image">
+                    <img src="/Photos/full_2022_speedmax-cf-8-disc-di2_3061_P04_P5.jpg" alt="Bike">
+                </div>
+                
+                <h2>SPEED S-Works Venge</h2>
+                <ul class="products-body-type5-item-color ul-nostyle" >
+                    <li  style="background-color: red;"></li>
+                    <li  style="background-color: blue;"></li>
+                    <li  style="background-color: green;"></li>
+                </ul>
+                <p>Price: 1000 SGD</p>
+            </a>
+            <a href="#" class="products-body-type5-item" id="item-6">
+                <div class="products-body-type5-item-image">
+                    <img src="/Photos/full_2023_3955_aeroad-cf-slx-8-disc-di2_P08_P5.jpeg" alt="Bike">
+                </div>
+                
+                <h2>SPEED S-Works Venge</h2>
+                <ul class="products-body-type5-item-color ul-nostyle" >
+                    <li  style="background-color: red;"></li>
+                    <li  style="background-color: blue;"></li>
+                    <li  style="background-color: green;"></li>
+                </ul>
+                <p>Price: 1000 SGD</p>
+            </a>
+        </section>
+    </article>
+    
+    
     <!-- Products Ends Here-->
 
 
     <!-- Footer Starts Here-->
-    <footer style="background-color:rgb(53, 53, 53);">
+    <footer class="main-footer-container" style="background-color:rgb(53, 53, 53);">
 
         <!--Social Media-->
         <h1 style="text-align: center;color: white;">Follow Us on</h1>
         <div class="main-footer-sm">
             <a href="https://www.facebook.com/">
-                <img src="../Photos/FaceBook.png">
+                <img src="/Photos/facebook.png" alt="Facebook">
             </a>
             <a href="https://www.instagram.com/">
-                <img src="../Photos/Instagram.png">
+                <img src="/Photos/instagram.png" alt="Instagram">
             </a>
             <a href="https://twitter.com/">
-                <img src="../Photos/Twitter.png">
+                <img src="/Photos/twitter.png" alt="Twitter">
             </a>
         </div>
     
         <!--Site Map-->
         <div class="main-footer-sitemap">
-            <ul id="ul-nostyle">
-                <li class="main-footer-sitemap-catagory">Bikes</li>
+            <ul class="ul-nostyle">
+                <li>Bikes</li>
                 <li><a href="#">Mountain</a></li>
                 <li><a href="#">Road</a></li>
             </ul>
-            <ul id="ul-nostyle">
-                <li class="main-footer-sitemap-catagory">Accessories</li>
+            <ul class="ul-nostyle">
+                <li>Accessories</li>
                 <li><a href="#">Mountain</a></li>
                 <li><a href="#">Road</a></li>
             </ul>
-            <ul id="ul-nostyle">
-                <li class="main-footer-sitemap-catagory">About Us</li>
+            <ul class="ul-nostyle">
+                <li>About Us</li>
                 <li><a href="#">Mountain</a></li>
             </ul>
-            <ul id="ul-nostyle">
-                <li class="main-footer-sitemap-catagory">Support</li>
+            <ul class="ul-nostyle">
+                <li>Support</li>
                 <li><a href="#">Contact information</a></li>
                 <li><a href="#">Contact Form</a></li>
             </ul>
             <div>
                 <p class="main-footer-app">Download App</p>
-                <img src="#" alt="QR Quote">
-                
-    
+                <img src="/Photos/qr_quote" alt="QR Quote">
             </div>
         </div>
-        
     </footer>
+
+    <script src="/main.js"></script>
 </body>
 
 

@@ -1,0 +1,779 @@
+/* Content type 1 */
+.main-body-content-type1 {
+    width: 100%;
+    height: calc(100vh - 55px);
+    /* Excluding the height of the navigation */
+
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* Align to centre of the container */
+}
+.main-body-content-type1 h2{
+    color: white;
+    font-size: 60px;
+    text-align: center;
+}
+.main-body-content-type1 p{
+    max-width: 70%; /* To make sure the text is not too wide */
+    margin: 20px 0 10px;
+
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    text-align: center;
+}
+
+.main-body-content-type1-button{
+    background-color: #ffff;
+    margin-top:40px;
+    padding: 10px 20px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    text-decoration: none;
+    color: rgb(53, 53, 53);
+    font-weight: 600;
+    font-size: 25px;
+}
+.main-body-content-type1-button:hover{
+    /* visual effect when hoverd */
+    background-color: rgb(241, 158, 41);
+    color: #ffff;
+    transform: translateY(-5px); /* Move up 5px */
+    transition: 0.2s ease-in-out
+}
+
+/* Tablet Version */
+@media screen and (max-width: 768px){
+    .main-body-content-type1 h2{
+        font-size: 50px;
+    }
+    .main-body-content-type1 p{
+        font-size: 20px;
+    }
+    .main-body-content-type1-button{
+        font-size: 20px;
+    }
+}
+
+/* Mobile Version */
+@media screen and (max-width: 576px){
+    .main-body-content-type1 h2{
+        max-width: 70%;
+        font-size: 40px;
+    }
+}
+
+/* Content type 2 */
+.main-body-content-type2{
+    width: 90%;
+    margin: 0 auto 55px; /* Leave some space at the corner*/
+
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+.main-body-content-type2-text h2{
+    color: rgb(0, 0, 0);
+    font-size: 50px;
+    text-align: left;
+    margin-bottom: 35px;
+}
+.main-body-content-type2 p{
+    color: rgb(0, 0, 0);
+    font-weight: 500;
+    font-size: 25px;
+    text-align: left;
+}
+
+.main-body-content-type2-image{
+    max-width: 60%; /* Ensure image is not too big */
+    height: fit-content;
+
+    object-fit: cover;
+    object-position: center; /* Ensure the cropped image is centered*/
+    box-shadow: 0 0px 7px rgba(0,0,0,0.4);
+    border-radius: 24px;
+}
+
+/* Tablet Version */
+@media screen and (max-width: 768px){
+    .main-body-content-type2-text,
+    .main-body-content-type2-image{
+        max-width: none;
+        width: 100%;
+        flex-basis: 100%;
+        /* Ensure image takes the the 
+        space of the container */
+    }
+    
+}
+/* Content type 2 Ends Here */
+
+/* Content type 3 */
+.contactus-contact-type3-container{
+    width: 90%;
+    height: fit-content;
+    padding: 40px 20px;
+    margin: 0 auto 45px;  /* Leave some space at conrer */
+
+    background-color: #f1f1f1;
+    border-radius: 12px;
+    box-shadow: 0 0px 5px rgba(0,0,0,0.3);
+    /* Decorate background */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px
+}
+
+.contactus-contact-type3-container h2{
+    font-size: 45px;
+}
+
+.contactus-contact-details{
+    width: 100%;
+    height: fit-content;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    gap: 30px;
+}
+.contactus-contact-details div i{
+    font-size: xx-large;
+    margin: 30px 0 20px;
+
+    display: flex;
+    justify-content: center;
+}
+.contactus-contact-details div p{
+    text-align: center;
+    font-weight: normal;
+}
+
+@media screen and (max-width: 768px){
+    .contactus-contact-type3-container{
+        width: 80%; /* Change size of container */
+    }
+    .contactus-contact-details{
+        flex-wrap: wrap;
+    }
+    .contactus-contact-details div{
+        flex-basis: 45%;
+        /* Ensure 1 line only has 2 details */
+    }
+    .contactus-contact-details div p{
+        font-size: normal;
+    }
+}
+@media screen and (max-width: 576px){
+    .contactus-contact-details div{
+        flex-basis: 100%;
+        /* Ensure 1 line only has 1 detail */
+    }
+}
+
+/* Content type 3 Ends Here */
+
+/* Content type 4 */
+.contactus-body-content-type4-container{
+    width: 100%;
+    height: calc(100vh - 55px); /* Excluding the navigation height */
+    margin-bottom:45px ;
+
+    background-position: center;
+    background-size: cover;
+    background-position: top;
+    /* When cropped, it shows the top of image */
+    background-repeat: no-repeat;
+    box-shadow: 0 0px 7px rgba(0,0,0,0.4);
+    /* background image styling */
+    
+    display: flex;
+    justify-content: end; /* Align to the right corner*/
+    align-items: center;    
+}
+
+.contactus-forms{
+    max-width: 60%; /* Ensure form is not too big */
+    height: fit-content;
+    padding: 10px 20px;
+    margin-right: 20px; /* Leave some space at the corner*/
+
+    border-radius: 24px;
+    background-color: #f1f1f1;
+    /* Background styling */
+}
+
+.contactus-forms form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.contactus-forms h2{
+    margin-bottom: 20px;
+    color: rgb(53, 53, 53);
+    font-size: xx-large;
+}
+
+.contactus-forms input{
+    width:100%;
+    height: 50px;
+    margin: 10px 0;
+    padding: 0 10px;
+    flex-basis: 48%;
+    /* Ensure 1 line only has 2 inputs */
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 5px;
+    /* Input styling */
+
+    font-size: 13px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.contactus-forms form textarea{
+    width:100%;
+    line-height: 50px; /* Ensure the placeholder is centered */
+    margin: 10px 0;
+    padding: 0 10px;
+
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 5px;
+
+    font-size: 13px;
+    font-family: 'Assistant', sans-serif;
+}
+
+.contactus-forms form #submit{
+    width: 100%;
+    height: 50px;
+    margin-top: 25px;
+    padding: 0 10px;
+    flex-basis: 100%; /* Ensure button takes up the whole line */
+
+    background-color: rgb(53, 53, 53);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 5px;
+    /* Background styling */
+
+    font-size: 17px;
+    color: #ffff;
+    font-weight: bold;
+}
+.contactus-forms form #submit:hover{
+    /* visual effect when hoverd */
+    background-color: rgb(241, 158, 41);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    color: #ffff;
+
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+}
+
+@media screen and (max-width: 768px){
+    .contactus-body-content-type4-container{
+        justify-content: center;
+    }
+    .contactus-forms{
+        max-width: 80%;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .contactus-forms input{
+        flex-basis: 100%;
+        /* Ensure 1 line has 1 input */
+    }
+}   
+/* Type 4 Ends Here */
+
+
+/* Road Bike Products */
+.products-body-type5-container{
+    width: 90%;
+    padding-top: 55px;
+    margin: 0 auto;  /* Leave some space at corner */
+    margin-bottom: 50px;
+    padding-top: 55px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px
+}
+
+.products-body-type5-container h1{
+    width: fit-content;
+    height: fit-content;
+
+    font-size: 45px;
+    border-bottom: 3px solid rgb(241, 158, 41);
+}
+
+
+.products-body-type5-container section{
+    width: 100%;
+    height: fit-content;
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.products-body-type5-item{
+    width: fit-content;
+    margin: 20px 0;
+    flex-basis: 30%;
+
+    border-radius: 12px ;
+    background-color: #ffff;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    /* Background styling */
+    
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.products-body-type5-item:hover{
+    /* Visual effects when hovered */
+    box-shadow: 0 2px 10px rgba(0,0,0,0.5);
+    transform: translateY(-5px);
+    transition: all 0.3s ease-in-out
+}
+
+.products-body-type5-item-image{
+    width: 100%;
+    height: fit-content;
+    
+    background-color: #f1f1f1;
+    border-radius:12px 12px 0 0  ;
+
+    display: flex;
+    justify-content: center;
+    /* Ensure image is center of the item container */
+}
+
+.products-body-type5-item-image img{
+    max-width: 100%;
+    height:fit-content;
+    margin: 0 auto;
+
+    object-position: center;
+    object-fit: cover;
+    border-radius: 12px 12px 0 0;
+}
+
+.products-body-type5-item-color{
+    width: 100%;
+    height: 35px;
+    padding: 0 20px; /* Leave some space at the corner */
+    
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.products-body-type5-item-color li {
+    width: 35px;
+    height: 35px;
+    margin-right:20px; /* Space out co */
+
+    border: 0.5px solid rgb(53, 53, 53);
+    border-radius: 24px;
+}
+.products-body-type5-item h2{
+    padding: 0 20px;
+    color: rgb(53, 53, 53);
+}
+
+.products-body-type5-item p{
+    padding: 0 20px;
+    margin: 10px 0;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(53, 53, 53);
+}
+
+@media screen and (max-width: 768px){
+    .products-body-type5-item{
+        flex-basis: 48%;
+        /* Ensure 1 line has 2 items */
+    }   
+}
+@media screen and (max-width: 576px){
+    .products-body-type5-item{
+        flex-basis: 100%;
+        /* Ensure 1 line has 2 items */
+    }   
+}
+/* Road Bike Products Stops Here */
+
+/* Item Page Starts Here */
+.products-body-type6-container{
+    height: calc(100vh - 55px); /* Excluding the navigation height */
+    margin: 55px 0 100px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.products-body-type6-image{
+    width:auto ; /* Ensure image is not too big */
+    height: 100%;
+
+    background-color: #f1f1f1;
+    display: flex;
+    align-items: center;
+}
+
+.products-body-type6-image img{
+    max-width: 100%;
+    max-height: 100%;
+    
+    object-fit: cover;
+    object-position: center;
+}
+
+.products-body-type6-content-scroll{
+    width: 600px;
+    height: 100%;
+    margin: 0 15px; /* Leave some space at the corner */
+
+    overflow: hidden;
+    overflow-y: scroll;
+    /* Create vertical scroll effect */
+}
+.products-body-type6-content-scroll div{
+    margin: 20px 0;
+}
+
+.products-body-type6-content-scroll h1{
+    margin:30px 0 ;
+    font-size: 45px;
+}
+
+.products-body-type6-content-scroll h2{
+    margin: 10px 0;
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+.products-body-type6-content-scroll p{
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.product-body-type6-form1{
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0;
+
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.product-body-type6-form1 input[type="radio"]{
+    display: none;
+}
+.product-body-type6-form1 label{
+    margin-right:20px;
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+}
+.product-body-type6-form1 label:after{
+    content: "";
+    width: 30px;
+    height: 30px;
+    color: rgb(189, 0, 0);
+
+    background-color:#ffff ;
+    border: 10px solid rgb(189, 0, 0);
+    border-radius: 50px;
+}
+
+.product-body-type6-form1 input[type="radio"]:checked + label:after{
+    background-color: #f1f1f1;
+}
+
+.product-body-type6-form1 input[type="radio"]:checked+label:before{
+    background-color: rgb(53, 53, 53);
+    border: 10px solid rgb(189, 0, 0);
+}
+
+@media screen and (max-width: 768px){
+    .products-body-type6-container{
+        flex-wrap: wrap;
+        height: fit-content;
+    }
+    .products-body-type6-image{
+        max-width: 100%;
+        height: calc(100vh - 55px); /* Excluding the navigation height */
+    }
+    .products-body-type6-content-scroll{
+        width: 80%;
+        height: 50%;
+        margin: 0 auto; /* Leave some space at the corner */
+
+        overflow: unset;
+    }
+    
+}
+
+/* Reviews */
+.main-body-content-type7-container{
+    width: 85%;
+    margin: 0 auto 100px;  /* Leave some space at conrer */
+}
+
+.main-body-content-type7-container h2{
+    font-size: xx-large;
+    margin: 30px 0;
+}
+
+.main-body-content-type7-button{
+    width: fit-content;
+    height: fit-content;
+    padding: 15px 20px;
+
+    color: #ffff;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bolder;
+    background-color: rgb(53, 53, 53);
+    border-radius: 30px;
+    /* Background styling */
+}
+
+.main-body-content-type7-reviews{
+    width: 100%;
+    height: fit-content;
+    margin: 30px 0;
+    padding: 15px 20px;
+
+    background-color: #f1f1f1;
+    border-radius: 15px;
+}
+
+.main-body-content-type7-reviews div{
+    display: inline-block; /* Put stars side by side */
+}
+.main-body-content-type7-reviews h3{
+    margin: 20px 0;
+    font-size: large;
+}
+.main-body-content-type7-reviews h4{
+    margin: 10px 0;
+    font-size: large;
+}
+
+
+/* technical Specifications */
+.product-body-type8-container{
+    width: 85%;
+    margin: 0 auto;  /* Leave some space at conrer */
+
+}
+.product-body-type8-container h2{
+    font-size: xx-large;
+}
+
+.product-body-type8-text{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product-body-type8-text div{
+    width: fit-content;
+    flex:1 30%;
+    /* Ensure it takes up only 30% of container */
+}
+
+.product-body-type8-text div h3{
+    font-size: 25px;
+}
+
+.product-body-type8-text{
+    width: 100%;
+    height: fit-content;
+    margin: 20px 0;
+
+    display: flex;
+    justify-content: start;
+    gap: 50px;
+}
+
+.product-body-type8-text ul{
+    width: fit-content;
+    flex:1 60%;
+    /* Ensure it takes up only 60% of container */
+}
+
+.product-body-type8-text ul li:nth-child(odd){
+    width: fit-content;
+    margin:10px 0 15px;
+    font-family: 'Assistant', sans-serif;
+    font-weight: bolder;
+    font-size: x-large;
+
+    border-bottom: 2px solid rgb(241, 158, 41);
+    /* border styling */
+}
+
+.product-body-type8-text ul li:nth-child(even){
+    width: fit-content;
+    font-family: 'Assistant', sans-serif;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+@media screen and (max-width: 768px){
+    .product-body-type8-text ul{
+        padding-left: 50px;
+        flex-basis: 100%;
+        /* Ensure the specs moves below */
+    }
+
+}
+/* Technical Specifications Ends Here */
+
+/* FAQ Starts Here */
+/* Content type 9*/
+.main-body-content-type9-scroll-container{
+    width: 100%;
+    height: fit-content;
+    margin: 0 auto;  /* Leave some space at conrer */
+    margin-bottom: 50px;
+
+    display: flex;
+    justify-content: space-between;
+
+    overflow-x: hidden;
+    overflow-x: scroll;
+    /* Create hortizontal scroll effect */
+}
+.main-body-content-type9-container{
+    min-width: 500px;
+    height: 300px;
+    padding: 15px 20px;
+    margin: 10px 10px;
+
+    background-size: cover;
+    background-position: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* Background image styling */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+    border-radius: 15px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-body-content-type9-container h2{
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffff;
+    font-size: 25px;
+    font-weight: bolder;
+}
+.main-body-content-type9-container p{
+    width: 80%;
+    text-align: center;
+    color: #ffff;
+    font-size: 17px;
+}
+.main-body-content-type9-container a{
+    margin-top:20px;
+    padding: 5px 20px;
+
+    background-color: #ffff;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+    color: rgb(53, 53, 53);
+    font-weight: 600;
+    font-size: 23px;
+}
+.main-body-content-type9-container a:hover{
+    background-color: rgb(241, 158, 41);
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out
+    /* Visual effect when hovered */
+}
+
+/* Content 9 Ends Here */
+
+/* Content type 10 */
+.main-body-content-type10-container{
+    width: 85%;
+    height: fit-content;
+    margin: 0 auto 100px;  /* Leave some space at conrer */
+}
+
+.main-body-content-type10-text{
+    width: 100%;
+    height: fit-content;
+    padding-top:55px;
+    /* Account for navigation height when a anchor 
+    tag brings user here */
+    margin-top: 75px;
+}
+.main-body-content-type10-text h2{
+    margin: 40px 0;
+    font-size: 45px;
+    text-align: center;
+}
+.main-body-content-type10-text img{
+    width: 100%;
+    height: auto;
+
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50px;
+    /* Image styling */
+}
+.main-body-content-type10-text div h3{
+    width: fit-content;
+    font-size: 35px;
+    margin: 50px 0 30px;
+
+    border-bottom: 2px solid rgb(241, 158, 41);
+    /* Add border styling */
+}
+.main-body-content-type10-text div p{
+    font-size: 18px;
+    margin: 20px 0;
+}
+.main-body-content-type10-text div ul li{
+    font-size: 18px;
+    margin: 20px 0;
+    margin-left: 15px;
+    /* Accounts for the dots in unordered list
+    which will appears outside of its container */
+}

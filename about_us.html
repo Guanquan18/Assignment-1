@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <title>title</title>
     <link rel="stylesheet" href="/main.css" type="text/css">
-    <link rel="stylesheet" href="/index.css" type="text/css">
+    <link rel="stylesheet" href="/normalised.css" type="text/css">
     <script src="https://kit.fontawesome.com/cc3cb1dbea.js" crossorigin="anonymous"></script>
     <style>
         
@@ -29,37 +29,43 @@
 <body >
 
 <!-- Header -->
+<nav class="main-header-menu">
+    <ul class="ul-nostyle">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="/products_road_bike.html">Products</a></li>
+        <li><a href="/contact_us.html">Contact Us</a></li>
+        <li><a href="/about_us.html">About Us</a></li>
+    </ul>
+</nav>
 
-    <header class="main-header">
-        <div class="main-header-logo">
-            <i class="fa-solid fa-person-biking"></i>
-            <h1>SPEED</h1>
-        </div>
-        
-        <div class="main-header-search">
-            <input type="search" placeholder="Search">
-        </div>
+<header class="main-header">
+    <div class="main-header-logo">
+        <div class="main-header-menu-button">
 
-        <nav class="main-header-nav">
-            <ul id="ul-nostyle">
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/products_road_bike.html">Products</a></li>
-                <li><a href="/contact_us.html">Contact Us</a></li>
-                <li><a href="/about_us.html">About Us</a></li>
-            </ul>
-        </nav>
-        
-        <div class="main-header-profile">
-            <img src="../Photos/IMG_20220201_143502.png" class="main-header-pic" alt="Profile" >
-            
-            <i class="fa-solid fa-cart-shopping"></i>
         </div>
-    </header>
+        <i class="fa-solid fa-person-biking"></i>
+        <h1>SPEED</h1>
+    </div>
+    
+    <div class="main-header-search">
+        <input type="search" placeholder="Search">
+    </div>
+
+    <nav class="main-header-nav">
+        <ul class="ul-nostyle">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/products_road_bike.html">Products</a></li>
+            <li><a href="/contact_us.html">Contact Us</a></li>
+            <li><a href="/about_us.html">About Us</a></li>
+        </ul>
+    </nav>
+    
+</header>
     <!-- Header Ends Here-->
 
     <!-- Content 1 starts Here -->
     <section class="main-body-content-type1" id="content-1">
-        <h1>About Us</h1>
+        <h2>About Us</h2>
         <p>Welcome to SPEED, where our passion for cycling fuels everything we do! Established with a love for two wheels and the open road, we are more than just a bike store; we are a community of riders dedicated to the thrill of the ride.
         </p>    
     </section>
@@ -95,57 +101,53 @@
         
     </section>
     <!-- Content 3 Ends Here-->
-
-   
-
     
-
-    <footer style="background-color:rgb(53, 53, 53);">
+    <!-- Footer -->
+    <footer class="main-footer-container" style="background-color:rgb(53, 53, 53);">
 
         <!--Social Media-->
         <h1 style="text-align: center;color: white;">Follow Us on</h1>
         <div class="main-footer-sm">
             <a href="https://www.facebook.com/">
-                <img src="../Photos/FaceBook.png">
+                <img src="/Photos/facebook.png" alt="Facebook">
             </a>
             <a href="https://www.instagram.com/">
-                <img src="../Photos/Instagram.png">
+                <img src="/Photos/instagram.png" alt="Instagram">
             </a>
             <a href="https://twitter.com/">
-                <img src="../Photos/Twitter.png">
+                <img src="/Photos/twitter.png" alt="Twitter">
             </a>
         </div>
     
         <!--Site Map-->
         <div class="main-footer-sitemap">
-            <ul id="ul-nostyle">
-                <li class="main-footer-sitemap-catagory">Bikes</li>
+            <ul class="ul-nostyle">
+                <li>Bikes</li>
                 <li><a href="#">Mountain</a></li>
                 <li><a href="#">Road</a></li>
             </ul>
-            <ul id="ul-nostyle">
-                <li class="main-footer-sitemap-catagory">Accessories</li>
+            <ul class="ul-nostyle">
+                <li>Accessories</li>
                 <li><a href="#">Mountain</a></li>
                 <li><a href="#">Road</a></li>
             </ul>
-            <ul id="ul-nostyle">
-                <li class="main-footer-sitemap-catagory">About Us</li>
+            <ul class="ul-nostyle">
+                <li>About Us</li>
                 <li><a href="#">Mountain</a></li>
             </ul>
-            <ul id="ul-nostyle">
-                <li class="main-footer-sitemap-catagory">Support</li>
+            <ul class="ul-nostyle">
+                <li>Support</li>
                 <li><a href="#">Contact information</a></li>
                 <li><a href="#">Contact Form</a></li>
             </ul>
             <div>
                 <p class="main-footer-app">Download App</p>
-                <img src="#" alt="QR Quote">
-                
-    
+                <img src="/Photos/qr_quote" alt="QR Quote">
             </div>
         </div>
-        
     </footer>
+
+    <script src="/main.js"></script>
 </body>
 
 
