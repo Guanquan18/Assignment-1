@@ -79,6 +79,7 @@
 
     display: flex;
     justify-content: space-between;
+    align-items: center;
     gap: 20px;
 }
 .main-body-content-type2-text h2{
@@ -114,7 +115,6 @@
         /* Ensure image takes the the 
         space of the container */
     }
-    
 }
 /* Content type 2 Ends Here */
 
@@ -183,7 +183,6 @@
         /* Ensure 1 line only has 1 detail */
     }
 }
-
 /* Content type 3 Ends Here */
 
 /* Content type 4 */
@@ -223,15 +222,21 @@
 }
 
 .contactus-forms h2{
-    margin-bottom: 20px;
     color: rgb(53, 53, 53);
     font-size: xx-large;
 }
 
+.contactus-forms form div{
+    width: auto;
+    height: fit-content;
+    flex-basis: 48%;
+}
+
 .contactus-forms input{
     width:100%;
-    height: 50px;
-    margin: 10px 0;
+    height: 40px;
+    margin-top: 20px;
+    
     padding: 0 10px;
     flex-basis: 48%;
     /* Ensure 1 line only has 2 inputs */
@@ -242,14 +247,14 @@
     border-radius: 5px;
     /* Input styling */
 
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Assistant', sans-serif;
 }
 
 .contactus-forms form textarea{
     width:100%;
     line-height: 50px; /* Ensure the placeholder is centered */
-    margin: 10px 0;
+    margin-top: 20px ;
     padding: 0 10px;
 
     background-color: rgb(255, 255, 255);
@@ -257,13 +262,12 @@
     border: none;
     border-radius: 5px;
 
-    font-size: 13px;
+    font-size: 15px;
     font-family: 'Assistant', sans-serif;
 }
-
 .contactus-forms form #submit{
     width: 100%;
-    height: 50px;
+    height: 40px;
     margin-top: 25px;
     padding: 0 10px;
     flex-basis: 100%; /* Ensure button takes up the whole line */
@@ -469,62 +473,89 @@
 }
 
 .products-body-type6-content-scroll h1{
-    margin:30px 0 ;
+    margin:20px 0 ;
     font-size: 45px;
 }
 
 .products-body-type6-content-scroll h2{
-    margin: 10px 0;
+    margin: 5px 0;
     font-size: 25px;
     font-weight: bolder;
 }
 
 .products-body-type6-content-scroll p{
     font-size: 17px;
-    font-weight: bold;
-    line-height: 25px;
+    font-weight: 500;    
+    line-height: 20px;
 }
 
-.product-body-type6-form1{
+#product-body-type6-form-item div{
     width: 100%;
     height: fit-content;
-    margin: 20px 0;
+    margin-bottom: 20px;
 
     display: flex;
     flex-wrap: nowrap;
 }
+.product-body-type6-form-item-color{
+    width: fit-content;
+    height: fit-content;
 
-.product-body-type6-form1 input[type="radio"]{
-    display: none;
-}
-.product-body-type6-form1 label{
-    margin-right:20px;
     display: flex;
-
-    flex-direction: column;
     align-items: center;
-
-    cursor: pointer;
 }
-.product-body-type6-form1 label:after{
-    content: "";
+
+.product-body-type6-form-item-color label{
+    margin-right: 20px;
+}
+
+.product-body-type6-form-item-color input{
     width: 30px;
     height: 30px;
-    color: rgb(189, 0, 0);
-
-    background-color:#ffff ;
-    border: 10px solid rgb(189, 0, 0);
-    border-radius: 50px;
+    margin-right:20px; /* Space out colors */
+    /* Radio button Styling */
 }
 
-.product-body-type6-form1 input[type="radio"]:checked + label:after{
+.product-body-type6-form-item-size{
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+
     background-color: #f1f1f1;
+    border-radius: 3px;
+
+    font-size: larger;
+    /* Select option styling */
 }
 
-.product-body-type6-form1 input[type="radio"]:checked+label:before{
+#product-body-type6-form-item-button {
+    width:100%;
+    height: 40px;
+    margin: 20px 0;
+    padding: 0 10px;
+
     background-color: rgb(53, 53, 53);
-    border: 10px solid rgb(189, 0, 0);
+    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 5px;
+    /* Background styling */
+
+    font-size: 17px;
+    color: #ffff;
+    font-weight: bold;
 }
+
+#product-body-type6-form-item-button:hover{
+    /* visual effect when hoverd */
+    background-color: rgb(241, 158, 41);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.4);
+    color: #ffff;
+
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+}
+
+
 
 @media screen and (max-width: 768px){
     .products-body-type6-container{

@@ -16,15 +16,12 @@
             margin: 0 auto 10px;
 
             display: flex;
-            flex: 0;
             flex-wrap: wrap;
             justify-content: space-between;
-            
         }
         .main-body-content-type2{
-            width: 48%;
-            min-width: 350px;
             margin: 0 0 75px;
+            flex-basis: 48%;
 
             justify-content: start;
             flex-direction:  column;
@@ -33,18 +30,19 @@
         .main-body-content-type2-image{
             max-width:100%;
         }
-        .main-body-content-type2-image img{
-            object-fit: cover;
-        }
         .main-body-content-type2-text{
             padding: 10px;
         }
-        .main-body-content-type2-text h1{
-            font-size: 30px; 
+        .main-body-content-type2-text h2{
+            font-size: 32px; 
         }
 
+        @media screen and (max-width: 768px) {
+            .main-body-content-type2{
+                flex-basis: 100%;
+            }
+        }
         
-
     </style>
 </head>
 <body >
@@ -60,6 +58,7 @@
     </nav>
 
     <header class="main-header">
+
         <div class="main-header-logo">
             <div class="main-header-menu-button">
 
@@ -85,11 +84,12 @@
     <!-- Header Ends Here-->
 
     <!-- Content 1 starts Here -->
-    <section class="products-body-type6-container">
+    <article class="products-body-type6-container">
         <div class="products-body-type6-image">
-            <img src="/Photos/product_item2/full_2023_3484_speedmax-cfr-tt_P01_P5.jpeg">
+            <img src="/Photos/product_item2/full_2023_3484_speedmax-cfr-tt_P01_P5.jpeg" alt="Canyon Bike">
         </div>
-        <article class="products-body-type6-content-scroll">
+        <section class="products-body-type6-content-scroll">
+            
             <div>
                 <h1>Speedmax CFR Di2</h1>
                 <h2>14,599 SGD</h2>
@@ -97,32 +97,41 @@
                 <p>Weight: 9.28 kg</p>
             </div>
             <hr>
-
-            <div>
-                <h2>Color: CFR Stealth</h2>
-                <form action="#" class="product-body-type6-form1">
-                    <input type="radio" name="color" id="Red" value="CFR Stealth" checked>
+            <form action="#" class="product-body-type6-form-item">
+                <h2>Select color</h2>
+                <div class="product-body-type6-form-item-color">
+                    <input type="radio" name="color" id="color-1" value="Red" >
                     <label for="color-1">Red</label>
-                    <input type="radio" name="color" id="Blue" value="CFR Stealth">
+                    <input type="radio" name="color" id="color-2" value="Blue">
                     <label for="color-2">Blue</label>
-                    <input type="radio" name="color" id="Yellow" value="CFR Stealth">
+                    <input type="radio" name="color" id="color-3" value="Yellow">
                     <label for="color-3">Yellow</label>
-                </form>
-            </div>
-            <hr>
-            <div>
+                </div>
+                <hr>
                 <h2>Select frame size</h2>
-            </div>
 
-        </article>
-    </section>
+                <select class="product-body-type6-form-item-size">
+                    <option value="Small">S</option>
+                    <option value="Medium">M</option>
+                    <option value="Large">L</option>
+                    <option value="ExtraLarge">XL</option>
+                </select>
+                <hr>
+                <button type="submit" id="product-body-type6-form-item-button">Check availability</button>
+
+                <h3>availability: 0</h3>
+            </form>
+
+        </section>
+    </article>
     <!-- Content 1 Ends Here-->
     
     <!-- Content 2 -->
     <!-- style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(https://media.trekbikes.com/image/upload/w_1200/Trek-Madone-Norway-RB-High-Res-190);"-->
     <article class="product-body-content-container">
+        
         <section class="main-body-content-type2" id="content-1">
-            <img src="/Photos/product_item2/3484_TOP-1_speedmax-cfr-tt_P01_cfr-finish.jpg"
+            <img src="/Photos/product_item2/3484_TOP-1_speedmax-cfr-tt_P01_cfr-finish.jpg" alt="Bike Stucture"
             class="main-body-content-type2-image">
             <div class="main-body-content-type2-text" >
                 <h2>Premium CFR finish</h2>
@@ -133,18 +142,18 @@
         </section>
 
         <section class="main-body-content-type2" id="content-2">
-            <img src="/Photos/product_item2/3484_TOP-2_speedmax-cfr-tt_P01_seatstays.jpg"
+            <img src="/Photos/product_item2/3484_TOP-2_speedmax-cfr-tt_P01_seatstays.jpg" alt="Aerodynamic seatstays"
             class="main-body-content-type2-image">
             <div class="main-body-content-type2-text" >
-                <h2>Aerodynamic seatstays</h2
-                <p>With their wing-like profile, the seatstays of the Speedmax don’t just look the part, they are also super aero thanks to their CFD-optimised design. 
+                <h2>Aerodynamic seatstays</h2>
+                <p>With their wing-like profile, the seatstays of the Speedmax don't just look the part, they are also super aero thanks to their CFD-optimised design. 
                     And with their premium CFR branding, there's no mistaking that this frame is the very best that Canyon have to offer.
                 </p>
             </div>
         </section>
 
         <section class="main-body-content-type2" id="content-3">
-            <img src="/Photos/product_item2/3484_TOP-3_speedmax-cfr-tt_P01_uci-label.jpg"
+            <img src="/Photos/product_item2/3484_TOP-3_speedmax-cfr-tt_P01_uci-label.jpg" alt="UCI approved"
             class="main-body-content-type2-image">
             <div class="main-body-content-type2-text" >
                 <h2>Fully UCI approved and WorldTour proven</h2>
@@ -155,7 +164,7 @@
         </section>
 
         <section class="main-body-content-type2" id="content-4">
-            <img src="/Photos/product_item2/3484_TOP-4_speedmax-cfr-tt_P01_cockpit.jpg"
+            <img src="/Photos/product_item2/3484_TOP-4_speedmax-cfr-tt_P01_cockpit.jpg" alt="Adjustable cockpit"
             class="main-body-content-type2-image">
             <div class="main-body-content-type2-text" >
                 <h2>Adjustable cockpit</h2>
@@ -177,6 +186,7 @@
             Write a Review
         </a>
         <section class="main-body-content-type7-reviews">
+            
             <div>
                 <i class="fa-solid fa-star" style="color: #353535;"></i>
                 <i class="fa-solid fa-star" style="color: #353535;"></i>
@@ -194,11 +204,9 @@
                 The P5X was the leader, the SHIV blew it out of the water. With the launch of the Ultegra bike, this is a out right best in class winner. 
                 The bar is set and it is very, very high!
             </p>
+
         </section>
-
-
     </article>
-
     <!-- Content 3 Ends Here-->
     
     <!-- Content 4 Starts Technical Specifications-->
@@ -206,6 +214,7 @@
         <hr>
         <h2>Technical Specifications</h2>
         <section class="product-body-type8-text" id="spec-1">
+            
             <div>
                 <h3>FRAME</h3>
             </div>
@@ -226,9 +235,11 @@
                     Axle dimension: 12x100 mm, Fork steer tube diameter: 1 1/8", Tyre Clearance: 30 mm, Material: Carbon (CF)
                 </li>
             </ul>
+
         </section>
         <hr>
         <section class="product-body-type8-text" id="spec-2">
+            
             <div>
                 <h3>DRIVETRAIN</h3>
             </div>
@@ -263,9 +274,11 @@
                     Weight: 200 g
                 </li>
             </ul>
+
         </section>
         <hr>
         <section class="product-body-type8-text" id="spec-3">
+            
             <div>
                 <h3>BRAKES</h3>
             </div>
@@ -288,6 +301,7 @@
                     Shimano RT-CL900, Size: 160 mm
                 </li>
             </ul>
+
         </section>
         <hr>
     </article>
@@ -302,13 +316,13 @@
         <h1 style="text-align: center;color: white;">Follow Us on</h1>
         <div class="main-footer-sm">
             <a href="https://www.facebook.com/">
-                <img src="/Photos/facebook.png" alt="Facebook">
+                <i class="fa-brands fa-facebook-f" style="color: white;"></i>
             </a>
             <a href="https://www.instagram.com/">
-                <img src="/Photos/instagram.png" alt="Instagram">
+                <i class="fa-brands fa-instagram" style="color: white;"></i>
             </a>
             <a href="https://twitter.com/">
-                <img src="/Photos/twitter.png" alt="Twitter">
+                <i class="fa-brands fa-twitter" style="color: white;"></i>
             </a>
         </div>
     
@@ -342,6 +356,4 @@
 
     <script src="/main.js"></script>
 </body>
-
-
 </html>

@@ -24,7 +24,6 @@
         #content-3{ 
             background-image:linear-gradient(0.25turn,rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.6)), 
             url(https://cdn.triathlete.com/wp-content/uploads/2021/10/V-PR-Matt-Hanson-Road-Testing-scaled.jpg?width=1200);
-            
         }
 
         #content-4-faq{
@@ -33,9 +32,6 @@
             background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), 
             url(https://trek.scene7.com/is/image/TrekBicycleProducts/TK21_WEB_UPDATES_ROAD_PLP_TimeTrial_Marquee_M?wid=1200);
         }
-
-
-
         
     </style>
 </head>
@@ -52,6 +48,7 @@
     </nav>
 
     <header class="main-header">
+
         <div class="main-header-logo">
             <div class="main-header-menu-button">
 
@@ -118,25 +115,39 @@
     <section class="contactus-body-content-type4-container" id="content-3">
         <div class="contactus-forms">
             <h2>Keep in touch with us</h2>
-            <form action="#" >
+            <form id="contact-us">
+
+                <div>
+                    <input type="text" id="fname" placeholder="Enter first name" required>
+                    <p id="fist-name-error"></p>
+                </div>
                 
-                <input type="text" id="fname" placeholder="Enter first name" required>
+                <div>
+                    <input type="text" id="lname" placeholder="Enter last name" required>
+                    <p id="last-name-error"></p>
+                </div>
+
+                <div>
+                    <input type="email" id="email" placeholder="Enter email"><br>
+                    <p id="email-error"></p>
+                </div>
                 
-                <input type="text" id="lname" placeholder="Enter last name" required>
-                
-                <input type="email" id="email" placeholder="Enter email" required>
+                <div>
+                    <input type="text" id="contact-number" placeholder="Enter contact number" ><br>
+                    <p id="contact-number-error"></p>
+                </div>
+
+                <textarea id="message" placeholder="Write message" style="height:50px"></textarea><br>
+                <p id="message-error"></p>
+
+                <button id="submit">Submit</button>
             
-                <input type="text" id="contact-number" placeholder="Enter contact number" required>
-            
-                <textarea id="message" placeholder="Enter message" style="height:50px"></textarea><br>
-                <input type="submit" id="submit" value="Submit">
             </form>
         </div>
     </section>
     <!-- Content 3 Ends Here-->
 
     <!-- Content 4 -->
-
     <section class="main-body-content-type1" id="content-4-faq">
         <h2>Frequently Asked Questions</h2>
         <p>Check out our FAQ page for more information and guides about our products.<br>
@@ -144,8 +155,6 @@
         </p> 
         <a href="/faq_page.html" class="main-body-content-type1-button">See FAQ</a>
     </section>
-
-
     <!-- Content 4 Ends Here-->
 
     <!-- Footer -->
@@ -155,13 +164,13 @@
         <h1 style="text-align: center;color: white;">Follow Us on</h1>
         <div class="main-footer-sm">
             <a href="https://www.facebook.com/">
-                <img src="/Photos/facebook.png" alt="Facebook">
+                <i class="fa-brands fa-facebook-f" style="color: white;"></i>
             </a>
             <a href="https://www.instagram.com/">
-                <img src="/Photos/instagram.png" alt="Instagram">
+                <i class="fa-brands fa-instagram" style="color: white;"></i>
             </a>
             <a href="https://twitter.com/">
-                <img src="/Photos/twitter.png" alt="Twitter">
+                <i class="fa-brands fa-twitter" style="color: white;"></i>
             </a>
         </div>
     
