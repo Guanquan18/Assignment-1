@@ -1,75 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="UTF-8" />
-    <title>title</title>
-    <link rel="stylesheet" href="/main.css" type="text/css">
-    <link rel="stylesheet" href="/normalised.css" type="text/css">
-    <script src="https://kit.fontawesome.com/cc3cb1dbea.js" crossorigin="anonymous"></script>
-    <style>
-        
-        a,li{
-            font-family:Arial, Helvetica, sans-serif;
-        }
-
-        #content-1{
-            margin: 55px 0 75px;
-
-            background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)), 
-            url("https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2021/04/13/3069364-62943008-2560-1440.jpg");
-            background-position: center;
-            background-size: cover;
-            position: relative;
-        }
-
-        @media screen and (max-width: 1000px){
-            .main-body-content-type2-text,
-            .main-body-content-type2-image{
-                max-width: none;
-                width: 100%;
-                flex-basis: 100%;
-                /* Ensure image takes the the 
-                space of the container */
+    <head>
+        <meta charset="UTF-8" />
+        <title>title</title>
+        <link rel="stylesheet" href="/main.css" type="text/css">
+        <link rel="stylesheet" href="/normalised.css" type="text/css">
+        <script src="https://kit.fontawesome.com/cc3cb1dbea.js" crossorigin="anonymous"></script>
+        <style>
+            
+            a,li{
+                font-family:Arial, Helvetica, sans-serif;
             }
-            .main-body-content-type2 p{
-                margin-bottom: 50px;
-            }
-            #content-2{
-                flex-wrap: wrap-reverse;
-            }
-            #content-3{
-                flex-wrap: wrap;
-            }
-        }
-        
-    </style>
-</head>
-<body >
 
-<!-- Header -->
-<nav class="main-header-menu">
-    <ul class="ul-nostyle">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="/products_road_bike.html">Products</a></li>
-        <li><a href="/contact_us.html">Contact Us</a></li>
-        <li><a href="/about_us.html">About Us</a></li>
-    </ul>
-</nav>
+            #content-1{
+                margin: 55px 0 75px;
 
-<header class="main-header">
-    
-    <div class="main-header-logo">
-        <div class="main-header-menu-button">
-        </div>
-        <i class="fa-solid fa-person-biking"></i>
-        <h1>SPEED</h1>
-    </div>
-    
-    <div class="main-header-search">
-        <input type="search" placeholder="Search">
-    </div>
+                background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.1)), 
+                url("https://imgresizer.eurosport.com/unsafe/1200x0/filters:format(jpeg)/origin-imgresizer.eurosport.com/2021/04/13/3069364-62943008-2560-1440.jpg");
+                background-position: center;
+                background-size: cover;
+                position: relative;
+            }
 
-    <nav class="main-header-nav">
+            @media screen and (max-width: 1000px){
+                .main-body-content-type2-text,
+                .main-body-content-type2-image{
+                    max-width: none;
+                    width: 100%;
+                    flex-basis: 100%;
+                    /* Ensure image takes the the 
+                    space of the container */
+                }
+                .main-body-content-type2 p{
+                    margin-bottom: 50px;
+                }
+                #content-2{
+                    flex-wrap: wrap-reverse;
+                }
+                #content-3{
+                    flex-wrap: wrap;
+                }
+            }
+            
+        </style>
+    </head>
+    <body >
+
+    <!-- Header -->
+    <nav class="main-header-menu">
         <ul class="ul-nostyle">
             <li><a href="index.html">Home</a></li>
             <li><a href="/products_road_bike.html">Products</a></li>
@@ -77,94 +55,116 @@
             <li><a href="/about_us.html">About Us</a></li>
         </ul>
     </nav>
-    
-</header>
-    <!-- Header Ends Here-->
 
-    <!-- Content 1 starts Here -->
-    <section class="main-body-content-type1" id="content-1">
-        <h2>About Us</h2>
-        <p>Welcome to SPEED, where our passion for cycling fuels everything we do! Established with a love for two wheels and the open road, we are more than just a bike store; we are a community of riders dedicated to the thrill of the ride.
-        </p>    
-    </section>
-    <!-- Content 1 Ends Here-->
-
-    <!-- Content 2 -->
-    <section class="main-body-content-type2" id="content-2">
+    <header class="main-header">
         
-        <div class="main-body-content-type2-text" >
-            <h2>Our Story</h2>
-            <p>Founded 2000, our journey began with a simple idea - to create a space where cyclists of all levels could find high-quality bikes, accessories, and expert advice. 
-                What started as a small venture has grown into a hub for biking enthusiasts, fostering a sense of camaraderie among those who share our love for the great outdoors and the freedom that comes with pedaling through life.
-            </p>
-        </div>
-        <img src="https://media.trekbikes.com/image/upload/w_1200/Trek-Madone-Norway-RB-High-Res-190" alt="Person Riding Trek Bike"
-        class="main-body-content-type2-image">
-    
-    </section>
-    <!-- Content 2 Ends Here-->
-
-    <!-- Content 3 -->
-    <section class="main-body-content-type2" id="content-3">
-        
-        <img src="https://media.trekbikes.com/image/upload/MadoneSLR7_23_37025_C_Alt4.jpg?wid=2000" alt="Cockpit of Trek Bike"
-        class="main-body-content-type2-image">
-
-        <div class="main-body-content-type2-text" >
-            <h2>Our Mission</h2>
-            <p>At SPEED, we are on a mission to inspire, equip, and support riders on their cycling adventures. 
-                We believe that every pedal stroke is a step towards a healthier, happier lifestyle, and we are committed to providing the tools and knowledge to make each journey memorable.
-            </p>
-        </div>
-         
-    </section>
-    <!-- Content 3 Ends Here-->
-    
-    <!-- Footer -->
-    <footer class="main-footer-container" style="background-color:rgb(53, 53, 53);">
-
-        <!--Social Media-->
-        <h1 style="text-align: center;color: white;">Follow Us on</h1>
-        <div class="main-footer-sm">
-            <a href="https://www.facebook.com/">
-                <i class="fa-brands fa-facebook-f" style="color: white;"></i>
-            </a>
-            <a href="https://www.instagram.com/">
-                <i class="fa-brands fa-instagram" style="color: white;"></i>
-            </a>
-            <a href="https://twitter.com/">
-                <i class="fa-brands fa-twitter" style="color: white;"></i>
-            </a>
-        </div>
-    
-        <!--Site Map-->
-        <div class="main-footer-sitemap">
-            <ul class="ul-nostyle">
-                <li>Bikes</li>
-                <li><a href="#">Mountain</a></li>
-                <li><a href="#">Road</a></li>
-            </ul>
-            <ul class="ul-nostyle">
-                <li>Accessories</li>
-                <li><a href="#">Mountain</a></li>
-                <li><a href="#">Road</a></li>
-            </ul>
-            <ul class="ul-nostyle">
-                <li>About Us</li>
-                <li><a href="#">Mountain</a></li>
-            </ul>
-            <ul class="ul-nostyle">
-                <li>Support</li>
-                <li><a href="#">Contact information</a></li>
-                <li><a href="#">Contact Form</a></li>
-            </ul>
-            <div>
-                <p class="main-footer-app">Download App</p>
-                <img src="/Photos/qr_quote" alt="QR Quote">
+        <div class="main-header-logo">
+            <div class="main-header-menu-button">
             </div>
+            <i class="fa-solid fa-person-biking"></i>
+            <h1>SPEED</h1>
         </div>
-    </footer>
+        
+        <div class="main-header-search">
+            <input type="search" placeholder="Search">
+        </div>
 
-    <script src="/main.js"></script>
-</body>
+        <nav class="main-header-nav">
+            <ul class="ul-nostyle">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="/products_road_bike.html">Products</a></li>
+                <li><a href="/contact_us.html">Contact Us</a></li>
+                <li><a href="/about_us.html">About Us</a></li>
+            </ul>
+        </nav>
+        
+    </header>
+        <!-- Header Ends Here-->
+
+        <!-- Content 1 starts Here -->
+        <section class="main-body-content-type1" id="content-1">
+            <h2>About Us</h2>
+            <p>Welcome to SPEED, where our passion for cycling fuels everything we do! Established with a love for two wheels and the open road, we are more than just a bike store; we are a community of riders dedicated to the thrill of the ride.
+            </p>    
+        </section>
+        <!-- Content 1 Ends Here-->
+
+        <!-- Content 2 -->
+        <section class="main-body-content-type2" id="content-2">
+            
+            <div class="main-body-content-type2-text" >
+                <h2>Our Story</h2>
+                <p>Founded 2000, our journey began with a simple idea - to create a space where cyclists of all levels could find high-quality bikes, accessories, and expert advice. 
+                    What started as a small venture has grown into a hub for biking enthusiasts, fostering a sense of camaraderie among those who share our love for the great outdoors and the freedom that comes with pedaling through life.
+                </p>
+            </div>
+            <img src="https://media.trekbikes.com/image/upload/w_1200/Trek-Madone-Norway-RB-High-Res-190" alt="Person Riding Trek Bike"
+            class="main-body-content-type2-image">
+        
+        </section>
+        <!-- Content 2 Ends Here-->
+
+        <!-- Content 3 -->
+        <section class="main-body-content-type2" id="content-3">
+            
+            <img src="https://media.trekbikes.com/image/upload/MadoneSLR7_23_37025_C_Alt4.jpg?wid=2000" alt="Cockpit of Trek Bike"
+            class="main-body-content-type2-image">
+
+            <div class="main-body-content-type2-text" >
+                <h2>Our Mission</h2>
+                <p>At SPEED, we are on a mission to inspire, equip, and support riders on their cycling adventures. 
+                    We believe that every pedal stroke is a step towards a healthier, happier lifestyle, and we are committed to providing the tools and knowledge to make each journey memorable.
+                </p>
+            </div>
+            
+        </section>
+        <!-- Content 3 Ends Here-->
+        
+        <!-- Footer -->
+        <footer class="main-footer-container" style="background-color:rgb(53, 53, 53);">
+
+            <!--Social Media-->
+            <h1 style="text-align: center;color: white;">Follow Us on</h1>
+            <div class="main-footer-sm">
+                <a href="https://www.facebook.com/">
+                    <i class="fa-brands fa-facebook-f" style="color: white;"></i>
+                </a>
+                <a href="https://www.instagram.com/">
+                    <i class="fa-brands fa-instagram" style="color: white;"></i>
+                </a>
+                <a href="https://twitter.com/">
+                    <i class="fa-brands fa-twitter" style="color: white;"></i>
+                </a>
+            </div>
+        
+            <!--Site Map-->
+            <div class="main-footer-sitemap">
+                <ul class="ul-nostyle">
+                    <li>Bikes</li>
+                    <li><a href="#">Mountain</a></li>
+                    <li><a href="#">Road</a></li>
+                </ul>
+                <ul class="ul-nostyle">
+                    <li>Accessories</li>
+                    <li><a href="#">Mountain</a></li>
+                    <li><a href="#">Road</a></li>
+                </ul>
+                <ul class="ul-nostyle">
+                    <li>About Us</li>
+                    <li><a href="#">Mountain</a></li>
+                </ul>
+                <ul class="ul-nostyle">
+                    <li>Support</li>
+                    <li><a href="#">Contact information</a></li>
+                    <li><a href="#">Contact Form</a></li>
+                </ul>
+                <div>
+                    <p class="main-footer-app">Download App</p>
+                    <img src="/Photos/qr_quote" alt="QR Quote">
+                </div>
+            </div>
+        </footer>
+
+        <script src="/main.js"></script>
+    </body>
 </html>

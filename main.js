@@ -20,24 +20,28 @@ menuButton.onclick= function() {
 /* For contact us input form */
 
 //Get values from user input
-var contactFormName = document.getElementById('contact-us');
-var contactFormFirstName = document.getElementById('fname').value;
-var contactFormLastName = document.getElementById('lname').value;
-var contactFormEmail =  document.getElementById('email').value;
-var contactFormContactNumber = document.getElementById('contact-number').value;
-var contactFormMessage = document.getElementById('message').value;
+const contactFormName = document.getElementById('contact-us');
+const contactFormFirstName = document.getElementById('fname');
+const contactFormLastName = document.getElementById('lname');
+const contactFormEmail =  document.getElementById('email');
+const contactFormContactNumber = document.getElementById('contact-number');
+const contactFormMessage = document.getElementById('message');
 
 // Get error messages
-var firstNameError = document.getElementById('first-name-error');
-var lastNameError = document.getElementById('last-name-error');
-var emailError = document.getElementById('email-error');
-var contactNumError = document.getElementById('contact-number-error');
-var messageError = document.getElementById('message-error');
 
 contactFormName.addEventListener("submit", function(event) {
     var isError=false;
 
+    event.preventDefault();
 
+    validateForm();
+    
+},false)
+
+function validateForm(){
+    if (contactFormFirstName.value.trim()==''){
+        setEror(contactFormFirstName, 'First name cannot be blank');
+    }
 
     /* Email validation */
     //Check if email is empty
@@ -87,7 +91,11 @@ contactFormName.addEventListener("submit", function(event) {
     if (isError) {
         event.preventDefault();
     }
+}
 
-
-
-},false)
+function setEror(element, errorMessage) {
+    const parent=element.parentElement;
+    parent.classList.add("error");
+    const paragraph=parent.querySelector("p");
+    paragraph.textContent=errorMessage;
+}

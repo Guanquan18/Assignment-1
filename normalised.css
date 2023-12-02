@@ -204,7 +204,7 @@
     align-items: center;    
 }
 
-.contactus-forms{
+.contact-us{
     max-width: 60%; /* Ensure form is not too big */
     height: fit-content;
     padding: 10px 20px;
@@ -215,31 +215,45 @@
     /* Background styling */
 }
 
-.contactus-forms form{
+#contact-us-form{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
-.contactus-forms h2{
+#contact-us h2{
     color: rgb(53, 53, 53);
     font-size: xx-large;
 }
 
-.contactus-forms form div{
-    width: auto;
+.input-group{
+    width: fit-content;
     height: fit-content;
-    flex-basis: 48%;
-}
-
-.contactus-forms input{
-    width:100%;
-    height: 40px;
     margin-top: 20px;
-    
-    padding: 0 10px;
     flex-basis: 48%;
     /* Ensure 1 line only has 2 inputs */
+}
+
+.input-group p{
+    visibility: hidden;
+    /* Hide error message */
+}
+
+.input-group-textarea{
+    flex:0 100% ;
+    /* Ensure 1 line only has 1 input */
+}
+
+.input-group-textarea p{
+    visibility: hidden;
+    /* Hide error message */
+}
+
+.input-group input{
+    width:100%;
+    height: 40px;
+    padding: 0 10px;
+    
 
     background-color: rgb(255, 255, 255);
     box-shadow: 0 2px 3px rgba(0,0,0,0.3);
@@ -251,9 +265,10 @@
     font-family: 'Assistant', sans-serif;
 }
 
-.contactus-forms form textarea{
+.input-group-textarea textarea{
     width:100%;
-    line-height: 50px; /* Ensure the placeholder is centered */
+    height: 55px;
+    line-height: 55px; /* Ensure the placeholder is centered */
     margin-top: 20px ;
     padding: 0 10px;
 
@@ -265,7 +280,21 @@
     font-size: 15px;
     font-family: 'Assistant', sans-serif;
 }
-.contactus-forms form #submit{
+
+.error input{
+    border:2px solid rgb(255, 0, 0);
+}
+
+.error p{
+    visibility: visible;
+    /* Show error message */
+}
+
+.success input{
+    border:2px solid rgb(0, 128, 0);
+}
+
+#contact-us-form #submit{
     width: 100%;
     height: 40px;
     margin-top: 25px;
@@ -282,7 +311,7 @@
     color: #ffff;
     font-weight: bold;
 }
-.contactus-forms form #submit:hover{
+#contact-us-form #submit:hover{
     /* visual effect when hoverd */
     background-color: rgb(241, 158, 41);
     box-shadow: 0 2px 5px rgba(0,0,0,0.4);
@@ -296,14 +325,14 @@
     .contactus-body-content-type4-container{
         justify-content: center;
     }
-    .contactus-forms{
+    .contact-us{
         max-width: 80%;
         margin-right: 0;
     }
 }
 
 @media screen and (max-width: 576px){
-    .contactus-forms input{
+    .input-group{
         flex-basis: 100%;
         /* Ensure 1 line has 1 input */
     }
