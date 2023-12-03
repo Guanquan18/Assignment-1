@@ -261,6 +261,10 @@ a{
     color: #f1f1f1;
 }
 
+.main-footer-sitemap ul li a:hover{
+    color: rgb(241, 158, 41);
+}
+
 /* Tablet Version */
 @media screen and (max-width: 768px){
     .main-footer-sitemap ul{

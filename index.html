@@ -23,7 +23,7 @@
 
             #content-2{
                 width: 100%;
-                height: 300px;
+                height: 100vh;
                 margin:0 0 20px ;
             }
 
@@ -39,7 +39,9 @@
                 margin-bottom: 30px;
             }
 
+            /* Special width so that long content fits better */
             @media screen and (max-width: 1000px) {
+                
                 #content-4{
                     flex-wrap: wrap-reverse;
                 }
@@ -50,6 +52,20 @@
                     flex-basis: 100%;
                     /* Ensure image takes the the 
                     space of the container */
+                }
+            }
+
+            /* Tablet Version */
+            @media screen and (max-width: 768px){
+                #content-2{
+                    height: 400px;
+                }
+            }
+            
+            /* Mobile Version */
+            @media screen and (max-width: 576px){
+                #content-2{
+                    height: 300px;
                 }
             }
 
