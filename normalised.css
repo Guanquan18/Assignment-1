@@ -67,8 +67,14 @@
 /* Mobile Version */
 @media screen and (max-width: 576px){
     .main-body-content-type1 h2{
-        max-width: 70%;
+        max-width: 90%;
         font-size: 40px;
+    }
+    .main-body-content-type1 p{
+        font-size: 15px;
+    }
+    .main-body-content-type1-button{
+        font-size: 15px;
     }
 }
 
@@ -84,14 +90,14 @@
 }
 .main-body-content-type2-text h2{
     color: rgb(0, 0, 0);
-    font-size: 50px;
+    font-size: 40px;
     text-align: left;
     margin-bottom: 25px;
 }
 .main-body-content-type2 p{
     color: rgb(0, 0, 0);
     font-weight: 500;
-    font-size: 25px;
+    font-size: 23px;
     text-align: left;
 }
 
@@ -114,6 +120,25 @@
         flex-basis: 100%;
         /* Ensure image takes the the 
         space of the container */
+    }
+
+    .main-body-content-type2-text h2{
+        font-size: 35px;
+    }
+
+    .main-body-content-type2 p{
+        font-size: 20px;
+    }
+}
+
+/* Mobile Version */
+@media screen and (max-width: 576px){
+    .main-body-content-type2-text h2{
+        font-size: 30px;
+    }
+
+    .main-body-content-type2 p{
+        font-size: 17px;   
     }
 }
 /* ---Content type 2 Ends Here--- */
@@ -138,6 +163,8 @@
 }
 
 .contactus-contact-type3-container h2{
+    width: fit-content;
+    text-align: center;
     font-size: 45px;
 }
 
@@ -166,21 +193,29 @@
     .contactus-contact-type3-container{
         width: 80%; /* Change size of container */
     }
+
     .contactus-contact-details{
         flex-wrap: wrap;
     }
+
     .contactus-contact-details div{
         flex-basis: 45%;
         /* Ensure 1 line only has 2 details */
     }
-    .contactus-contact-details div p{
-        font-size: normal;
+
+    .contactus-contact-type3-container h2{
+        font-size: 40px;
     }
 }
+
 @media screen and (max-width: 576px){
     .contactus-contact-details div{
         flex-basis: 100%;
         /* Ensure 1 line only has 1 detail */
+    }
+
+    .contactus-contact-type3-container h2{
+        font-size: 30px;
     }
 }
 /* ---Content type 3 Ends Here--- */
@@ -634,7 +669,25 @@
 
         overflow: unset;
     }
+}
+
+/* Mobile Versiom */
+@media screen and (max-width: 576px){
+    .product-body-type6-form-item-color label{
+        margin-right: 10px;
+    }
+
+    .products-body-type6-content-scroll h1{
+        font-size: 30px;
+    }
     
+    .products-body-type6-content-scroll h2{
+        font-size: 19px;
+    }
+    
+    .products-body-type6-content-scroll p{
+        font-size: 15px;
+    }
 }
 /* ---Type 6 Item Page Starts Here--- */
 
@@ -662,6 +715,13 @@
     /* Background styling */
 }
 
+.main-body-content-type7-button:hover{
+    /* visual effect when hoverd */
+    background-color: rgb(241, 158, 41);
+    transform: translateY(-5px);
+    transition: 0.2s ease-in-out;
+}
+
 .main-body-content-type7-reviews{
     width: 100%;
     height: fit-content;
@@ -675,10 +735,12 @@
 .main-body-content-type7-reviews div{
     display: inline-block; /* Put stars side by side */
 }
+
 .main-body-content-type7-reviews h3{
     margin: 20px 0;
     font-size: large;
 }
+
 .main-body-content-type7-reviews h4{
     margin: 10px 0;
     font-size: large;
@@ -747,11 +809,27 @@
 /* Tablet Version */
 @media screen and (max-width: 768px){
     .product-body-type8-text ul{
-        padding-left: 50px;
+        padding-left: 20%;
         flex-basis: 100%;
         /* Ensure the specs moves below */
     }
 }
+
+/* Mobile Version */
+@media screen and (max-width: 768px){
+    .product-body-type8-container h2{
+        font-size: 25px;
+    }
+
+    .product-body-type8-text div h3{
+        font-size: 23px;
+    }
+
+    .product-body-type8-text ul{
+        padding-left: 5%;
+    }
+}
+
 /* ---Type 8 Technical Specifications Ends Here */
 
 /* ---Type 9 FAQ--- */
@@ -763,6 +841,7 @@
 
     display: flex;
     justify-content: space-between;
+    gap: 10px;
 
     overflow-x: hidden;
     overflow-x: scroll;
@@ -772,7 +851,7 @@
     min-width: 500px;
     height: 300px;
     padding: 15px 20px;
-    margin: 10px 10px;
+    margin: 10px 0;
 
     background-size: cover;
     background-position: center;
@@ -819,6 +898,12 @@
     transition: 0.2s ease-in-out
     /* Visual effect when hovered */
 }
+
+@media screen and (max-width: 768px){
+    .main-body-content-type9-container{
+        min-width: 100%;
+    }
+}
 /* ---Type 9 FAQ Ends Here */
 
 /* ---Type 10 FAQ--- */
@@ -860,12 +945,37 @@
 }
 .main-body-content-type10-text div p{
     font-size: 18px;
-    margin: 20px 0;
+    margin-bottom: 40px;
 }
 .main-body-content-type10-text div ul li{
     font-size: 18px;
-    margin: 20px 0;
+    margin-bottom: 45px;
     margin-left: 15px;
     /* Accounts for the dots in unordered list
     which will appears outside of its container */
+}
+
+@media screen and (max-width: 768px) {
+    .main-body-content-type10-text h2{
+        font-size: 40px;
+    }
+    .main-body-content-type10-text div h3{
+        font-size: 30px;
+    }
+    .main-body-content-type10-text div p{
+        font-size: 17px;
+    }
+}
+
+/* Mobile Version */
+@media screen and (max-width: 576px){
+    .main-body-content-type10-text h2{
+        font-size: 35px;
+    }
+    .main-body-content-type10-text div h3{
+        font-size: 25px;
+    }
+    .main-body-content-type10-text div p{
+        font-size: 15px;
+    }
 }

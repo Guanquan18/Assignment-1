@@ -1,7 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Assistant:wght@500&family=Lato&family=Roboto&display=swap');
 
 a,p,h1,h2,h3,h4{
-    font-family: 'Assistant', sans-serif;
+    /* font-family: 'Assistant', sans-serif; */
+    font-family: 'Roboto', sans-serif;
     text-decoration: none;
 }
 a{
@@ -90,14 +91,14 @@ a{
 .main-header-nav ul{
     width: 100%;
     height: 100%;
-    
     display: flex;
-    flex-basis:1;
     justify-content: space-between;
 }
+
 .main-header-nav ul li{
     line-height: 55px;
 }
+
 .main-header-nav ul li a{
     padding: 5px 10px;
     
@@ -105,8 +106,8 @@ a{
     color: rgb(53,53,53);
     font-weight:bold;
     font-size: 16px;
-    text-wrap: nowrap;
 }
+
 .main-header-nav ul li a:hover{
     color: #f1f1f1;
     background-color: rgb(53,53,53);
@@ -153,7 +154,6 @@ a{
 
     .main-header-menu ul{
         width: 100%;
-        height: calc(100vh- 55px);
 
         display: flex;
         flex-wrap: wrap;
