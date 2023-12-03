@@ -2,10 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>title</title>
-        <link rel="stylesheet" href="/main.css" type="text/css">
-        <link rel="stylesheet" href="/normalised.css" type="text/css">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="normalised.css" type="text/css">
         <script src="https://kit.fontawesome.com/cc3cb1dbea.js" crossorigin="anonymous"></script>
+        <script src="main.js" defer></script>
+        
         <style>
             a,li{
                 font-family:Arial, Helvetica, sans-serif;
@@ -41,17 +43,15 @@
         <nav class="main-header-menu">
             <ul class="ul-nostyle">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="/products_road_bike.html">Products</a></li>
-                <li><a href="/contact_us.html">Contact Us</a></li>
-                <li><a href="/about_us.html">About Us</a></li>
+                <li><a href="products_road_bike.html">Products</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
             </ul>
         </nav>
 
         <header class="main-header">
-
             <div class="main-header-logo">
                 <div class="main-header-menu-button">
-
                 </div>
                 <i class="fa-solid fa-person-biking"></i>
                 <h1>SPEED</h1>
@@ -64,9 +64,9 @@
             <nav class="main-header-nav">
                 <ul class="ul-nostyle">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="/products_road_bike.html">Products</a></li>
-                    <li><a href="/contact_us.html">Contact Us</a></li>
-                    <li><a href="/about_us.html">About Us</a></li>
+                    <li><a href="products_road_bike.html">Products</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
                 </ul>
             </nav>
             
@@ -119,32 +119,33 @@
 
                     <div class="input-group">
                         <input type="text" id="fname" placeholder="Enter first name" name="fname">
-                        <p>Error</p>
+                        <p>Error Message</p>
                     </div>
                     
                     <div class="input-group">
                         <input type="text" id="lname" placeholder="Enter last name" name="lname">
-                        <p>Error</p>
+                        <p>Error Message</p>
                     </div>
 
                     <div class="input-group">
                         <input type="text" id="email" placeholder="Enter email" name="email">
-                        <p>Error</p>
+                        <p>Error Message</p>
                     </div>
                     
                     <div class="input-group">
                         <input type="text" id="contact-number" placeholder="Enter contact number" name="contact-number">
-                        <p>Error</p>
+                        <p>Error Message</p>
                     </div>
 
                     <div class="input-group-textarea">
                         <textarea id="message" placeholder="Write message" name="message"></textarea>
-                        <p>Error</p>
+                        <p>Error Message</p>
                     </div>
                     
                     <button type="submit" id="submit">Submit</button>
                 
                 </form>
+                <script src="main.js"></script>
             </div>
         </section>
         <!-- Content 3 Ends Here-->
@@ -155,7 +156,7 @@
             <p>Check out our FAQ page for more information and guides about our products.<br>
                 It might answer your queries and be helpful for you!
             </p> 
-            <a href="/faq_page.html" class="main-body-content-type1-button">See FAQ</a>
+            <a href="faq_page.html" class="main-body-content-type1-button">See FAQ</a>
         </section>
         <!-- Content 4 Ends Here-->
 
@@ -163,7 +164,7 @@
         <footer class="main-footer-container" style="background-color:rgb(53, 53, 53);">
 
             <!--Social Media-->
-            <h1 style="text-align: center;color: white;">Follow Us on</h1>
+            <h1>Follow Us on</h1>
             <div class="main-footer-sm">
                 <a href="https://www.facebook.com/">
                     <i class="fa-brands fa-facebook-f" style="color: white;"></i>
@@ -175,38 +176,173 @@
                     <i class="fa-brands fa-twitter" style="color: white;"></i>
                 </a>
             </div>
+            <!-- Social Media Ends Here -->
         
             <!--Site Map-->
             <div class="main-footer-sitemap">
+                
                 <ul class="ul-nostyle">
-                    <li>Bikes</li>
-                    <li><a href="#">Mountain</a></li>
-                    <li><a href="#">Road</a></li>
+                    <li>Products</li>
+                    <li><a href="products_road_bike.html">Road Bikes</a></li>
+                    <li><a href="products_road_bike.html">Mountain Bikes</a></li>
                 </ul>
-                <ul class="ul-nostyle">
-                    <li>Accessories</li>
-                    <li><a href="#">Mountain</a></li>
-                    <li><a href="#">Road</a></li>
-                </ul>
+
                 <ul class="ul-nostyle">
                     <li>About Us</li>
-                    <li><a href="#">Mountain</a></li>
+                    <li><a href="about_us.html">Our Story</a></li>
+                    <li><a href="about_us.html">Our Mission</a></li>
+                    <li><a href="about_us.html">Our Core Values</a></li>
                 </ul>
+
                 <ul class="ul-nostyle">
                     <li>Support</li>
-                    <li><a href="#">Contact information</a></li>
-                    <li><a href="#">Contact Form</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="contact_us.html">Contact Form</a></li>
                 </ul>
+
                 <div>
                     <p class="main-footer-app">Download App</p>
-                    <img src="/Photos/qr_quote" alt="QR Quote">
-                    
+                    <img src="Photos/qr_quote" alt="QR Quote">
                 </div>
+
             </div>
         </footer>
+        <!-- Footer Ends Here -->
+        <!-- <script>
+            /* For contact us input form */
 
-        <script src="/main.js"></script>
+            //Get values from user input
+            const contactFormName = document.getElementById('contact-us-form');
+            const contactFormFirstName = document.getElementById('fname');
+            const contactFormLastName = document.getElementById('lname');
+            const contactFormEmail =  document.getElementById('email');
+            const contactFormContactNumber = document.getElementById('contact-number');
+            const contactFormMessage = document.getElementById('message');
+
+            // Get error messages
+
+            contactFormName.addEventListener("submit", function(event) {
+                var isError=false;
+
+                event.preventDefault();
+
+                validateForm();
+                
+            },false)
+
+            function validateForm(){
+                /* First name validation */
+                if (contactFormFirstName.value.trim()==''){
+                    setEror(contactFormFirstName, 'First name cannot be blank');
+                    var isError=true;
+                }
+
+                else if (contactFormFirstName.value.length > 25 ) {
+                    setEror(contactFormFirstName, 'First name cannot be more than 25 characters');
+                    var isError=true;
+                }
+
+                else{
+                    setSuccess(contactFormFirstName);
+                }
+
+                /* Last name validation */
+                if (contactFormLastName.value.trim()==''){
+                    setEror(contactFormLastName, 'Last name cannot be blank');
+                    var isError=true;
+                }
+
+                else if (contactFormLastName.value.length > 25 ) {
+                    setEror(contactFormLastName, 'Last name cannot be more than 25 characters');
+                    var isError=true;
+                }
+
+                else{
+                    setSuccess(contactFormLastName);
+                }
+
+                /* Email validation */
+                const emailFormat= /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+                
+                //Check if email is empty
+                if (contactFormEmail.value.trim() == "") {
+                    setEror(contactFormEmail, 'Email cannot be blank');
+                    var isError=true;
+                }
+
+                //Check if email is correct format
+                else if(!contactFormEmail.value.match(emailFormat)){
+                    setEror(contactFormEmail, 'Invalid Email Format');
+                    var isError=true;
+                }
+
+                else if (contactFormEmail.value.length > 40 ) {
+                    setEror(contactFormEmail, 'Email cannot be more than 40 characters');
+                    var isError=true;
+                }
+
+                else{
+                    setSuccess(contactFormEmail);
+                }
+
+                /* contact validation */
+                //Check if contact number is empty
+                if (contactFormContactNumber.value.trim() == "") {
+                    setEror(contactFormContactNumber, 'Contact number is required');
+                    var isError=true;
+                }
+
+                //Check if contact number is not a number
+                else if (!(!isNaN(contactFormContactNumber.value))) {
+                    setEror(contactFormContactNumber, 'Contact number must be numbers only');
+                    var isError=true;
+                }
+
+                //Check the length of contact number
+                else if (contactFormContactNumber.value.length != 8 ) {
+                    setEror(contactFormContactNumber, 'Contact number must be 8 digits');
+                    var isError=true;
+                }
+
+                else{
+                    setSuccess(contactFormContactNumber);
+                }
+
+                /* Message validation */
+                if (contactFormMessage.value.trim() == "") {
+                    setEror(contactFormMessage, 'Message is required');
+                    var isError=true;
+                }
+
+                else if (contactFormMessage.value.length > 200 ) {
+                   setEror(contactFormMessage, 'Message cannot be more than 500 characters');
+                   var isError=true;
+                }
+
+                else{
+                    setSuccess(contactFormMessage);
+                }
+            }
+
+            function setEror(element, errorMessage) {
+                const parent=element.parentElement;
+
+                if (parent.classList.contains("success")){
+                    parent.classList.remove("success");
+                }
+                parent.classList.add("error");
+                const paragraph=parent.querySelector("p");
+                paragraph.textContent=errorMessage;
+            }
+
+            function setSuccess(element) {
+                const parent=element.parentElement;
+
+                if (parent.classList.contains("error")){
+                    parent.classList.remove("error");
+                }
+                parent.classList.add("success");
+            }
+        </script> -->
     </body>
-
-
 </html>

@@ -2,11 +2,12 @@
 <html>
     <head>
         <meta charset="UTF-8" />
-        <title>title</title>
-        <link rel="stylesheet" href="/main.css" type="text/css">
-        <link rel="stylesheet" href="/normalised.css" type="text/css">
+        <title>Item</title>
+        <link rel="stylesheet" href="main.css" type="text/css">
+        <link rel="stylesheet" href="normalised.css" type="text/css">
         <script src="https://kit.fontawesome.com/cc3cb1dbea.js" crossorigin="anonymous"></script>
-        
+        <script src="main.js" defer ></script>
+
         <style>
             a,li{
                 font-family:Arial, Helvetica, sans-serif;
@@ -51,9 +52,9 @@
         <nav class="main-header-menu">
             <ul class="ul-nostyle">
                 <li><a href="index.html">Home</a></li>
-                <li><a href="/products_road_bike.html">Products</a></li>
-                <li><a href="/contact_us.html">Contact Us</a></li>
-                <li><a href="/about_us.html">About Us</a></li>
+                <li><a href="products_road_bike.html">Products</a></li>
+                <li><a href="contact_us.html">Contact Us</a></li>
+                <li><a href="about_us.html">About Us</a></li>
             </ul>
         </nav>
 
@@ -72,9 +73,9 @@
             <nav class="main-header-nav">
                 <ul class="ul-nostyle">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="/products_road_bike.html">Products</a></li>
-                    <li><a href="/contact_us.html">Contact Us</a></li>
-                    <li><a href="/about_us.html">About Us</a></li>
+                    <li><a href="products_road_bike.html">Products</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="about_us.html">About Us</a></li>
                 </ul>
             </nav>
             
@@ -84,7 +85,7 @@
         <!-- Content 1 starts Here -->
         <article class="products-body-type6-container">
             <div class="products-body-type6-image">
-                <img src="/Photos/product_item1/full_2022_2921-1_speedmax-cfr-disc-di2_rd_P5.png" alt="Canyon Bike">
+                <img src="Photos/product_item1/full_2022_2921-1_speedmax-cfr-disc-di2_rd_P5.png" alt="Canyon Bike">
             </div>
             <section class="products-body-type6-content-scroll">
                 <div>
@@ -95,29 +96,34 @@
                 </div>
                 <hr>
 
-                <form action="#" class="product-body-type6-form-item">
+                <form id="product-body-type6-form-item">
                     <h2>Select color</h2>
                     <div class="product-body-type6-form-item-color">
-                        <input type="radio" name="color" id="color-1" value="Red" >
+                        <input type="radio" name="color" id="color-1" value="Red">
                         <label for="color-1">Red</label>
                         <input type="radio" name="color" id="color-2" value="Blue">
                         <label for="color-2">Blue</label>
                         <input type="radio" name="color" id="color-3" value="Yellow">
                         <label for="color-3">Yellow</label>
                     </div>
+                    <p id="color-error-message"></p>
+
                     <hr>
                     <h2>Select frame size</h2>
 
                     <select class="product-body-type6-form-item-size">
+                        <option value="">Select a size</option>
                         <option value="Small">S</option>
                         <option value="Medium">M</option>
                         <option value="Large">L</option>
-                        <option value="ExtraLarge">XL</option>
+                        <option value="ExtraLarge">XL</option>  
                     </select>
+                    <p id="size-error-message"></p>
+
                     <hr>
                     <button type="submit" id="product-body-type6-form-item-button">Check availability</button>
 
-                    <h3>availability: 0</h3>
+                    <h3>Availability: 10</h3>
                 </form>
 
             </section>
@@ -128,7 +134,7 @@
         <!-- style="background-image:linear-gradient(rgba(0, 0, 0, 0.2),rgba(0, 0, 0, 0.2)), url(https://media.trekbikes.com/image/upload/w_1200/Trek-Madone-Norway-RB-High-Res-190);"-->
         <article class="product-body-content-container">
             <section class="main-body-content-type2" id="content-1">
-                <img src="/Photos/product_item1/3725_TOP-1_speedmax-cfr-di2_P03_cfr-finish-003.jpg" alt="Bike Structure"
+                <img src="Photos/product_item1/3725_TOP-1_speedmax-cfr-di2_P03_cfr-finish-003.jpg" alt="Bike Structure"
                 class="main-body-content-type2-image">
                 <div class="main-body-content-type2-text" >
                     <h2>Premium CFR finish</h2>
@@ -140,7 +146,7 @@
             </section>
 
             <section class="main-body-content-type2" id="content-2">
-                <img src="/Photos/product_item1/3725_TOP-2_speedmax-cfr-di2_P03_seatstays-004.jpg" alt="Aerodynamic seatstays"
+                <img src="Photos/product_item1/3725_TOP-2_speedmax-cfr-di2_P03_seatstays-004.jpg" alt="Aerodynamic seatstays"
                 class="main-body-content-type2-image">
                 <div class="main-body-content-type2-text" >
                     <h2>Aerodynamic seatstays</h2>
@@ -151,7 +157,7 @@
             </section>
 
             <section class="main-body-content-type2" id="content-3">
-                <img src="/Photos/product_item1/3725_TOP-3_speedmax-cfr-di2_P03_cockpit.jpg" alt="Bike Cockpit"
+                <img src="Photos/product_item1/3725_TOP-3_speedmax-cfr-di2_P03_cockpit.jpg" alt="Bike Cockpit"
                 class="main-body-content-type2-image">
                 <div class="main-body-content-type2-text" >
                     <h2>Adjustable cockpit</h2>
@@ -162,7 +168,7 @@
             </section>
 
             <section class="main-body-content-type2" id="content-4">
-                <img src="/Photos/product_item1/3725_TOP-4_speedmax-cfr-di2_P03_integrated-hydration-system-003.jpg" alt="Bike Hydration System"
+                <img src="Photos/product_item1/3725_TOP-4_speedmax-cfr-di2_P03_integrated-hydration-system-003.jpg" alt="Bike Hydration System"
                 class="main-body-content-type2-image">
                 <div class="main-body-content-type2-text" >
                     <h2>An aerodynamic integrated hydration system</h2>
@@ -306,7 +312,7 @@
         <footer class="main-footer-container" style="background-color:rgb(53, 53, 53);">
 
             <!--Social Media-->
-            <h1 style="text-align: center;color: white;">Follow Us on</h1>
+            <h1>Follow Us on</h1>
             <div class="main-footer-sm">
                 <a href="https://www.facebook.com/">
                     <i class="fa-brands fa-facebook-f" style="color: white;"></i>
@@ -318,36 +324,82 @@
                     <i class="fa-brands fa-twitter" style="color: white;"></i>
                 </a>
             </div>
+            <!-- Social Media Ends Here -->
         
             <!--Site Map-->
             <div class="main-footer-sitemap">
+                
                 <ul class="ul-nostyle">
-                    <li>Bikes</li>
-                    <li><a href="#">Mountain</a></li>
-                    <li><a href="#">Road</a></li>
+                    <li>Products</li>
+                    <li><a href="products_road_bike.html">Road Bikes</a></li>
+                    <li><a href="products_road_bike.html">Mountain Bikes</a></li>
                 </ul>
-                <ul class="ul-nostyle">
-                    <li>Accessories</li>
-                    <li><a href="#">Mountain</a></li>
-                    <li><a href="#">Road</a></li>
-                </ul>
+
                 <ul class="ul-nostyle">
                     <li>About Us</li>
-                    <li><a href="#">Mountain</a></li>
+                    <li><a href="about_us.html">Our Story</a></li>
+                    <li><a href="about_us.html">Our Mission</a></li>
+                    <li><a href="about_us.html">Our Core Values</a></li>
                 </ul>
+
                 <ul class="ul-nostyle">
                     <li>Support</li>
-                    <li><a href="#">Contact information</a></li>
-                    <li><a href="#">Contact Form</a></li>
+                    <li><a href="contact_us.html">Contact Us</a></li>
+                    <li><a href="contact_us.html">Contact Form</a></li>
                 </ul>
+
                 <div>
                     <p class="main-footer-app">Download App</p>
-                    <img src="/Photos/qr_quote" alt="QR Quote">
+                    <img src="Photos/qr_quote" alt="QR Quote">
                 </div>
 
             </div>
         </footer>
-        
-        <script src="/main.js"></script>
+        <!-- Footer Ends Here-->
+        <script>
+            /* ---Item Page availability form--- */
+            //Get values from user input
+            const availabilityForm = document.querySelector('#product-body-type6-form-item');
+
+            availabilityForm.addEventListener("submit", (event) => {
+                
+                event.preventDefault();
+                checkAvailabilityForm();
+
+            },false);
+
+            function checkAvailabilityForm(){
+
+                // Get user input
+                var colorInputs = document.getElementsByName("color");
+                var colorSelected=false;
+
+                for (var i = 0; i < colorInputs.length; i++){
+                    if (colorInputs[i].checked){
+                        var color = colorInputs[i].value;
+                        colorSelected=true;
+                    }
+                }
+
+                var paragraph = document.querySelector('#color-error-message');
+
+                if(!colorSelected){
+                    paragraph.textContent="Please select a color";
+                }
+                else{
+                    paragraph.textContent="";
+                }
+                
+
+                var size = document.querySelector('.product-body-type6-form-item-size');
+                var paragraph = document.querySelector('#size-error-message')
+                if (size.value===""){
+                    paragraph.textContent="Please select a size";
+                }
+                else{
+                    paragraph.textContent="";
+                }
+            }
+        </script>
     </body>
 </html>

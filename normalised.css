@@ -1,4 +1,4 @@
-/* Content type 1 */
+/* ---Content type--- 1 */
 .main-body-content-type1 {
     width: 100%;
     height: calc(100vh - 55px);
@@ -48,7 +48,7 @@
     background-color: rgb(241, 158, 41);
     color: #ffff;
     transform: translateY(-5px); /* Move up 5px */
-    transition: 0.2s ease-in-out
+    transition: 0.2s ease-in-out;
 }
 
 /* Tablet Version */
@@ -72,7 +72,7 @@
     }
 }
 
-/* Content type 2 */
+/* ---Content type 2--- */
 .main-body-content-type2{
     width: 90%;
     margin: 0 auto 55px; /* Leave some space at the corner*/
@@ -86,7 +86,7 @@
     color: rgb(0, 0, 0);
     font-size: 50px;
     text-align: left;
-    margin-bottom: 35px;
+    margin-bottom: 25px;
 }
 .main-body-content-type2 p{
     color: rgb(0, 0, 0);
@@ -116,9 +116,9 @@
         space of the container */
     }
 }
-/* Content type 2 Ends Here */
+/* ---Content type 2 Ends Here--- */
 
-/* Content type 3 */
+/* ---Content type--- 3 */
 .contactus-contact-type3-container{
     width: 90%;
     height: fit-content;
@@ -183,9 +183,9 @@
         /* Ensure 1 line only has 1 detail */
     }
 }
-/* Content type 3 Ends Here */
+/* ---Content type 3 Ends Here--- */
 
-/* Content type 4 */
+/* ---Content type 4--- */
 .contactus-body-content-type4-container{
     width: 100%;
     height: calc(100vh - 55px); /* Excluding the navigation height */
@@ -240,6 +240,8 @@
 }
 
 .input-group-textarea{
+    width: fit-content;
+    height: fit-content;
     flex:0 100% ;
     /* Ensure 1 line only has 1 input */
 }
@@ -254,9 +256,8 @@
     height: 40px;
     padding: 0 10px;
     
-
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
     border: none;
     border-radius: 5px;
     /* Input styling */
@@ -267,26 +268,33 @@
 
 .input-group-textarea textarea{
     width:100%;
-    height: 55px;
-    line-height: 55px; /* Ensure the placeholder is centered */
+    height: 65px;
     margin-top: 20px ;
     padding: 0 10px;
 
     background-color: rgb(255, 255, 255);
-    box-shadow: 0 2px 3px rgba(0,0,0,0.3);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
     border: none;
     border-radius: 5px;
+    /* Input styling */
 
     font-size: 15px;
     font-family: 'Assistant', sans-serif;
 }
 
+/* ---Form validation styling--- */
 .error input{
+    border:2px solid rgb(255, 0, 0);
+}
+
+.error textarea{
     border:2px solid rgb(255, 0, 0);
 }
 
 .error p{
     visibility: visible;
+    color: rgb(255, 0, 0);
+    font-size: 15px;
     /* Show error message */
 }
 
@@ -294,10 +302,15 @@
     border:2px solid rgb(0, 128, 0);
 }
 
+.success textarea{
+    border:2px solid rgb(0, 128, 0);
+}
+/* ---Form validation tyling Ends Here--- */
+
 #contact-us-form #submit{
     width: 100%;
     height: 40px;
-    margin-top: 25px;
+    margin-top: 20px;
     padding: 0 10px;
     flex-basis: 100%; /* Ensure button takes up the whole line */
 
@@ -311,6 +324,7 @@
     color: #ffff;
     font-weight: bold;
 }
+
 #contact-us-form #submit:hover{
     /* visual effect when hoverd */
     background-color: rgb(241, 158, 41);
@@ -321,26 +335,29 @@
     transition: 0.2s ease-in-out;
 }
 
+/* Tablet Version */
 @media screen and (max-width: 768px){
     .contactus-body-content-type4-container{
         justify-content: center;
+        /* Align form to the center */
     }
     .contact-us{
         max-width: 80%;
         margin-right: 0;
+        /* Increase size of form */
     }
 }
 
+/* Mobile Version */
 @media screen and (max-width: 576px){
     .input-group{
         flex-basis: 100%;
         /* Ensure 1 line has 1 input */
     }
 }   
-/* Type 4 Ends Here */
+/* ---Type 4 Ends Here--- */
 
-
-/* Road Bike Products */
+/* ---Type 5 Road Bike Products--- */
 .products-body-type5-container{
     width: 90%;
     padding-top: 55px;
@@ -415,6 +432,11 @@
     border-radius: 12px 12px 0 0;
 }
 
+.products-body-type5-item h2{
+    padding: 0 20px;
+    color: rgb(53, 53, 53);
+}
+
 .products-body-type5-item-color{
     width: 100%;
     height: 35px;
@@ -433,35 +455,34 @@
     border: 0.5px solid rgb(53, 53, 53);
     border-radius: 24px;
 }
-.products-body-type5-item h2{
-    padding: 0 20px;
-    color: rgb(53, 53, 53);
-}
 
 .products-body-type5-item p{
     padding: 0 20px;
-    margin: 10px 0;
+    margin-bottom: 20px;
 
     font-size: 20px;
     font-weight: bold;
     color: rgb(53, 53, 53);
 }
 
+/* Tablet Version */
 @media screen and (max-width: 768px){
     .products-body-type5-item{
         flex-basis: 48%;
         /* Ensure 1 line has 2 items */
     }   
 }
+
+/* Mobile Version */
 @media screen and (max-width: 576px){
     .products-body-type5-item{
         flex-basis: 100%;
         /* Ensure 1 line has 2 items */
     }   
 }
-/* Road Bike Products Stops Here */
+/* ---Type 5 Road Bike Products Stops Here--- */
 
-/* Item Page Starts Here */
+/* ---Type 6 Item Page Starts Here--- */
 .products-body-type6-container{
     height: calc(100vh - 55px); /* Excluding the navigation height */
     margin: 55px 0 100px;
@@ -531,6 +552,7 @@
     height: fit-content;
 
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 }
 
@@ -555,6 +577,11 @@
 
     font-size: larger;
     /* Select option styling */
+}
+
+#product-body-type6-form-item p{
+    color: rgb(255, 0, 0);
+    margin-bottom: 10px;
 }
 
 #product-body-type6-form-item-button {
@@ -584,8 +611,13 @@
     transition: 0.2s ease-in-out;
 }
 
+#product-body-type6-form-item h3{
+    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+}
 
-
+/* Tablet Version */
 @media screen and (max-width: 768px){
     .products-body-type6-container{
         flex-wrap: wrap;
@@ -604,8 +636,9 @@
     }
     
 }
+/* ---Type 6 Item Page Starts Here--- */
 
-/* Reviews */
+/* ---Type 7 Reviews--- */
 .main-body-content-type7-container{
     width: 85%;
     margin: 0 auto 100px;  /* Leave some space at conrer */
@@ -650,9 +683,9 @@
     margin: 10px 0;
     font-size: large;
 }
+/* ---Type 7 Review Ends Here--- */
 
-
-/* technical Specifications */
+/* ---Type 8 technical Specifications--- */
 .product-body-type8-container{
     width: 85%;
     margin: 0 auto;  /* Leave some space at conrer */
@@ -711,18 +744,17 @@
     font-weight: lighter;
 }
 
+/* Tablet Version */
 @media screen and (max-width: 768px){
     .product-body-type8-text ul{
         padding-left: 50px;
         flex-basis: 100%;
         /* Ensure the specs moves below */
     }
-
 }
-/* Technical Specifications Ends Here */
+/* ---Type 8 Technical Specifications Ends Here */
 
-/* FAQ Starts Here */
-/* Content type 9*/
+/* ---Type 9 FAQ--- */
 .main-body-content-type9-scroll-container{
     width: 100%;
     height: fit-content;
@@ -754,6 +786,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* Align things to center */
 }
 .main-body-content-type9-container h2{
     margin-bottom: 10px;
@@ -786,12 +819,11 @@
     transition: 0.2s ease-in-out
     /* Visual effect when hovered */
 }
+/* ---Type 9 FAQ Ends Here */
 
-/* Content 9 Ends Here */
-
-/* Content type 10 */
+/* ---Type 10 FAQ--- */
 .main-body-content-type10-container{
-    width: 85%;
+    width: 90%;
     height: fit-content;
     margin: 0 auto 100px;  /* Leave some space at conrer */
 }
@@ -806,7 +838,7 @@
 }
 .main-body-content-type10-text h2{
     margin: 40px 0;
-    font-size: 45px;
+    font-size: 50px;
     text-align: center;
 }
 .main-body-content-type10-text img{
